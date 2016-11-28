@@ -1,0 +1,575 @@
+2016/11/28 10:25:14 INFO  - jmeter.util.JMeterUtils: Setting Locale to en_US 
+2016/11/28 10:25:14 INFO  - jmeter.JMeter: Loading user properties from: /Users/wangrong/apache-jmeter-2.13/bin/user.properties 
+2016/11/28 10:25:14 INFO  - jmeter.JMeter: Loading system properties from: /Users/wangrong/apache-jmeter-2.13/bin/system.properties 
+2016/11/28 10:25:14 INFO  - jmeter.JMeter: Copyright (c) 1998-2015 The Apache Software Foundation 
+2016/11/28 10:25:14 INFO  - jmeter.JMeter: Version 2.13 r1665067 
+2016/11/28 10:25:14 INFO  - jmeter.JMeter: java.version=1.8.0_91 
+2016/11/28 10:25:14 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
+2016/11/28 10:25:14 INFO  - jmeter.JMeter: os.name=Mac OS X 
+2016/11/28 10:25:14 INFO  - jmeter.JMeter: os.arch=x86_64 
+2016/11/28 10:25:14 INFO  - jmeter.JMeter: os.version=10.12.1 
+2016/11/28 10:25:14 INFO  - jmeter.JMeter: file.encoding=UTF-8 
+2016/11/28 10:25:14 INFO  - jmeter.JMeter: Default Locale=English (United States) 
+2016/11/28 10:25:14 INFO  - jmeter.JMeter: JMeter  Locale=English (United States) 
+2016/11/28 10:25:14 INFO  - jmeter.JMeter: JMeterHome=/Users/wangrong/apache-jmeter-2.13 
+2016/11/28 10:25:14 INFO  - jmeter.JMeter: user.dir  =/Users/wangrong/VEX/Script/2.8/negative 
+2016/11/28 10:25:14 INFO  - jmeter.JMeter: PWD       =/Users/wangrong/VEX/Script/2.8/negative 
+2016/11/28 10:25:14 INFO  - jmeter.JMeter: IP: 172.24.14.45 Name: bogon FullName: bogon 
+2016/11/28 10:25:15 INFO  - jmeter.gui.action.LookAndFeelCommand: Using look and feel: com.apple.laf.AquaLookAndFeel [Mac OS X, System] 
+2016/11/28 10:25:15 INFO  - jmeter.JMeter: Loaded icon properties from org/apache/jmeter/images/icon.properties 
+2016/11/28 10:25:17 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2016/11/28 10:25:17 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2016/11/28 10:25:18 INFO  - jmeter.gui.util.MenuFactory: Skipping kg.apc.jmeter.config.VariablesFromCSVFile 
+2016/11/28 10:25:18 INFO  - jmeter.util.BSFTestElement: Registering JMeter version of JavaScript engine as work-round for BSF-22 
+2016/11/28 10:25:18 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Cannot find .className property for htmlParser, using default 
+2016/11/28 10:25:18 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is  
+2016/11/28 10:25:18 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is  
+2016/11/28 10:25:18 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is  
+2016/11/28 10:25:18 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is  
+2016/11/28 10:25:18 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2016/11/28 10:25:18 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.http.control.gui.WebServiceSamplerGui 
+2016/11/28 10:25:18 INFO  - jmeter.gui.util.MenuFactory: Skipping org.apache.jmeter.protocol.http.modifier.gui.ParamModifierGui 
+2016/11/28 10:25:19 INFO  - jorphan.exec.KeyToolUtils: keytool found at 'keytool' 
+2016/11/28 10:25:19 INFO  - jmeter.protocol.http.proxy.ProxyControl: HTTP(S) Test Script Recorder SSL Proxy will use keys that support embedded 3rd party resources in file /Users/wangrong/apache-jmeter-2.13/bin/proxyserver.jks 
+2016/11/28 10:25:19 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
+2016/11/28 10:25:19 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
+2016/11/28 10:25:19 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
+2016/11/28 10:25:19 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
+2016/11/28 10:54:10 INFO  - jmeter.services.FileServer: Default base='/Users/wangrong/VEX/Script/2.8/negative' 
+2016/11/28 10:54:10 INFO  - jmeter.gui.action.Load: Loading file: /Users/wangrong/VEX/Script/2.8/negative/T6VOD_Default_PrimaryIndexIsUnreachable.jmx 
+2016/11/28 10:54:10 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/negative' 
+2016/11/28 10:54:10 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
+2016/11/28 10:54:10 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
+2016/11/28 10:54:10 INFO  - jmeter.save.SaveService: Using SaveService properties file version 1656252 
+2016/11/28 10:54:10 INFO  - jmeter.save.SaveService: Using SaveService properties version 2.8 
+2016/11/28 10:54:10 INFO  - jmeter.save.SaveService: All converter versions present and correct 
+2016/11/28 10:54:10 INFO  - jmeter.save.SaveService: Loading file: /Users/wangrong/VEX/Script/2.8/negative/T6VOD_Default_PrimaryIndexIsUnreachable.jmx 
+2016/11/28 10:54:10 INFO  - jmeter.protocol.http.control.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_ 
+2016/11/28 10:54:10 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/negative' 
+2016/11/28 10:55:54 INFO  - jmeter.gui.action.Load: Loading file: /Users/wangrong/VEX/Script/2.8/negative/T6VOD_Default_PrimaryIsAllCodec_WithoutSomeUnrequiredParameter.jmx 
+2016/11/28 10:55:54 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/negative' 
+2016/11/28 10:55:54 INFO  - jmeter.save.SaveService: Loading file: /Users/wangrong/VEX/Script/2.8/negative/T6VOD_Default_PrimaryIsAllCodec_WithoutSomeUnrequiredParameter.jmx 
+2016/11/28 10:55:54 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/negative' 
+2016/11/28 10:58:11 INFO  - jmeter.gui.action.Load: Loading file: /Users/wangrong/VEX/Script/2.8/negative/T6VOD_Default_PrimaryIsAllCodec_WithoutSomeParameter.jmx 
+2016/11/28 10:58:11 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/negative' 
+2016/11/28 10:58:11 INFO  - jmeter.save.SaveService: Loading file: /Users/wangrong/VEX/Script/2.8/negative/T6VOD_Default_PrimaryIsAllCodec_WithoutSomeParameter.jmx 
+2016/11/28 10:58:12 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/negative' 
+2016/11/28 10:59:40 INFO  - jmeter.engine.StandardJMeterEngine: Listeners will be started after enabling running version 
+2016/11/28 10:59:40 INFO  - jmeter.engine.StandardJMeterEngine: To revert to the earlier behaviour, define jmeterengine.startlistenerslater=false 
+2016/11/28 10:59:40 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/11/28 10:59:40 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/11/28 10:59:40 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/11/28 10:59:40 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2016/11/28 10:59:40 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Setup test enviorment 
+2016/11/28 10:59:40 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Setup test enviorment. 
+2016/11/28 10:59:40 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 10:59:40 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 10:59:40 INFO  - jmeter.threads.JMeterThread: jmeterthread.startearlier=true (see jmeter.properties) 
+2016/11/28 10:59:40 INFO  - jmeter.threads.JMeterThread: Running PostProcessors in forward order 
+2016/11/28 10:59:40 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/11/28 10:59:40 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Setup test enviorment to finish before starting next group 
+2016/11/28 10:59:40 INFO  - jmeter.threads.JMeterThread: Thread started: Setup test enviorment 1-1 
+2016/11/28 10:59:40 INFO  - jmeter.protocol.http.sampler.HTTPHCAbstractImpl: Local host = bogon 
+2016/11/28 10:59:40 INFO  - jmeter.protocol.http.sampler.HTTPHC4Impl: HTTP request retry count = 0 
+2016/11/28 10:59:40 INFO  - jmeter.protocol.http.sampler.HTTPHC4Impl: Setting up HTTPS TrustAll scheme 
+2016/11/28 10:59:40 INFO  - jmeter.util.JsseSSLManager: Using default SSL protocol: TLS 
+2016/11/28 10:59:40 INFO  - jmeter.util.JsseSSLManager: SSL session context: per-thread 
+2016/11/28 10:59:44 INFO  - jmeter.threads.JMeterThread: Thread is done: Setup test enviorment 1-1 
+2016/11/28 10:59:44 INFO  - jmeter.threads.JMeterThread: Thread finished: Setup test enviorment 1-1 
+2016/11/28 10:59:44 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 2 : Client send aac request without AssetId 
+2016/11/28 10:59:44 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Client send aac request without AssetId. 
+2016/11/28 10:59:44 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 10:59:44 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 2 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 10:59:44 INFO  - jmeter.threads.ThreadGroup: Started thread group number 2 
+2016/11/28 10:59:44 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Client send aac request without AssetId to finish before starting next group 
+2016/11/28 10:59:44 INFO  - jmeter.threads.JMeterThread: Thread started: Client send aac request without AssetId 2-1 
+2016/11/28 11:00:11 INFO  - jmeter.threads.JMeterThread: Thread is done: Client send aac request without AssetId 2-1 
+2016/11/28 11:00:11 INFO  - jmeter.threads.JMeterThread: Thread finished: Client send aac request without AssetId 2-1 
+2016/11/28 11:00:11 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 3 : Client send aac request without ProviderId 
+2016/11/28 11:00:11 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Client send aac request without ProviderId. 
+2016/11/28 11:00:11 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 11:00:11 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 3 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 11:00:11 INFO  - jmeter.threads.ThreadGroup: Started thread group number 3 
+2016/11/28 11:00:11 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Client send aac request without ProviderId to finish before starting next group 
+2016/11/28 11:00:11 INFO  - jmeter.threads.JMeterThread: Thread started: Client send aac request without ProviderId 3-1 
+2016/11/28 11:00:22 INFO  - jmeter.threads.JMeterThread: Thread is done: Client send aac request without ProviderId 3-1 
+2016/11/28 11:00:22 INFO  - jmeter.threads.JMeterThread: Thread finished: Client send aac request without ProviderId 3-1 
+2016/11/28 11:00:22 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 4 : Client send aac request without StreamType 
+2016/11/28 11:00:22 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Client send aac request without StreamType. 
+2016/11/28 11:00:22 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 11:00:22 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 4 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 11:00:22 INFO  - jmeter.threads.ThreadGroup: Started thread group number 4 
+2016/11/28 11:00:22 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Client send aac request without StreamType to finish before starting next group 
+2016/11/28 11:00:22 INFO  - jmeter.threads.JMeterThread: Thread started: Client send aac request without StreamType 4-1 
+2016/11/28 11:00:34 INFO  - jmeter.threads.JMeterThread: Thread is done: Client send aac request without StreamType 4-1 
+2016/11/28 11:00:34 INFO  - jmeter.threads.JMeterThread: Thread finished: Client send aac request without StreamType 4-1 
+2016/11/28 11:00:34 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 5 : Clear up test env 
+2016/11/28 11:00:34 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Clear up test env. 
+2016/11/28 11:00:34 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 11:00:34 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 5 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 11:00:34 INFO  - jmeter.threads.ThreadGroup: Started thread group number 5 
+2016/11/28 11:00:34 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2016/11/28 11:00:34 INFO  - jmeter.threads.JMeterThread: Thread started: Clear up test env 5-1 
+2016/11/28 11:00:34 INFO  - jmeter.threads.JMeterThread: Thread is done: Clear up test env 5-1 
+2016/11/28 11:00:34 INFO  - jmeter.threads.JMeterThread: Thread finished: Clear up test env 5-1 
+2016/11/28 11:00:34 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/11/28 11:00:34 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2016/11/28 11:38:33 INFO  - jmeter.gui.action.Load: Loading file: /Users/wangrong/VEX/Script/2.8/negative/T6VOD_Default_PrimaryIndexRequest500.jmx 
+2016/11/28 11:38:33 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/negative' 
+2016/11/28 11:38:33 INFO  - jmeter.save.SaveService: Loading file: /Users/wangrong/VEX/Script/2.8/negative/T6VOD_Default_PrimaryIndexRequest500.jmx 
+2016/11/28 11:38:33 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/negative' 
+2016/11/28 11:43:14 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/11/28 11:43:14 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/11/28 11:43:14 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2016/11/28 11:43:14 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Setup test enviorment 
+2016/11/28 11:43:14 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Setup test enviorment. 
+2016/11/28 11:43:14 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 11:43:14 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 11:43:14 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/11/28 11:43:14 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Setup test enviorment to finish before starting next group 
+2016/11/28 11:43:14 INFO  - jmeter.threads.JMeterThread: Thread started: Setup test enviorment 1-1 
+2016/11/28 11:46:25 INFO  - jmeter.gui.action.Start: Stopping test 
+2016/11/28 11:46:25 INFO  - jmeter.threads.JMeterThread: Stopping: Setup test enviorment 1-1 
+2016/11/28 11:46:25 WARN  - jmeter.threads.JMeterThread: Sampler is not Interruptible: Start a service which return 400 for global edge cache call 
+2016/11/28 11:46:25 INFO  - jmeter.threads.JMeterThread: Thread is done: Setup test enviorment 1-1 
+2016/11/28 11:46:25 INFO  - jmeter.threads.JMeterThread: Thread finished: Setup test enviorment 1-1 
+2016/11/28 11:46:25 INFO  - jmeter.engine.StandardJMeterEngine: Test stopped - no more thread groups will be started 
+2016/11/28 11:46:25 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/11/28 11:46:25 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2016/11/28 11:50:35 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/11/28 11:50:35 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/11/28 11:50:35 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2016/11/28 11:50:36 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Setup test enviorment 
+2016/11/28 11:50:36 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Setup test enviorment. 
+2016/11/28 11:50:36 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 11:50:36 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 11:50:36 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/11/28 11:50:36 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Setup test enviorment to finish before starting next group 
+2016/11/28 11:50:36 INFO  - jmeter.threads.JMeterThread: Thread started: Setup test enviorment 1-1 
+2016/11/28 11:52:29 INFO  - jmeter.gui.action.Start: Stopping test 
+2016/11/28 11:52:29 INFO  - jmeter.threads.JMeterThread: Stopping: Setup test enviorment 1-1 
+2016/11/28 11:52:29 WARN  - jmeter.threads.JMeterThread: Sampler is not Interruptible: Start a service which return 400 for global edge cache call 
+2016/11/28 11:52:29 INFO  - jmeter.threads.JMeterThread: Thread is done: Setup test enviorment 1-1 
+2016/11/28 11:52:29 INFO  - jmeter.threads.JMeterThread: Thread finished: Setup test enviorment 1-1 
+2016/11/28 11:52:29 INFO  - jmeter.engine.StandardJMeterEngine: Test stopped - no more thread groups will be started 
+2016/11/28 11:52:29 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/11/28 11:52:29 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2016/11/28 11:52:47 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/11/28 11:52:47 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/11/28 11:52:47 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2016/11/28 11:52:47 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Setup test enviorment 
+2016/11/28 11:52:47 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Setup test enviorment. 
+2016/11/28 11:52:47 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 11:52:47 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 11:52:47 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/11/28 11:52:47 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2016/11/28 11:52:47 INFO  - jmeter.threads.JMeterThread: Thread started: Setup test enviorment 1-1 
+2016/11/28 11:52:53 INFO  - jmeter.threads.JMeterThread: Thread is done: Setup test enviorment 1-1 
+2016/11/28 11:52:53 INFO  - jmeter.threads.JMeterThread: Thread finished: Setup test enviorment 1-1 
+2016/11/28 11:52:53 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/11/28 11:52:53 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2016/11/28 11:53:29 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/11/28 11:53:29 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/11/28 11:53:29 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2016/11/28 11:53:29 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Setup test enviorment 
+2016/11/28 11:53:29 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Setup test enviorment. 
+2016/11/28 11:53:29 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 11:53:29 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 11:53:29 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/11/28 11:53:29 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2016/11/28 11:53:29 INFO  - jmeter.threads.JMeterThread: Thread started: Setup test enviorment 1-1 
+2016/11/28 11:53:48 INFO  - jmeter.gui.action.Start: Stopping test 
+2016/11/28 11:53:48 INFO  - jmeter.threads.JMeterThread: Stopping: Setup test enviorment 1-1 
+2016/11/28 11:53:48 WARN  - jmeter.threads.JMeterThread: Sampler is not Interruptible: Start a service which return 400 for global edge cache call 
+2016/11/28 11:53:48 INFO  - jmeter.threads.JMeterThread: Thread is done: Setup test enviorment 1-1 
+2016/11/28 11:53:48 INFO  - jmeter.threads.JMeterThread: Thread finished: Setup test enviorment 1-1 
+2016/11/28 11:53:48 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/11/28 11:53:48 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2016/11/28 11:55:43 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/11/28 11:55:43 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/11/28 11:55:43 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2016/11/28 11:55:44 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Setup test enviorment 
+2016/11/28 11:55:44 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Setup test enviorment. 
+2016/11/28 11:55:44 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 11:55:44 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 11:55:44 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/11/28 11:55:44 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2016/11/28 11:55:44 INFO  - jmeter.threads.JMeterThread: Thread started: Setup test enviorment 1-1 
+2016/11/28 11:55:50 INFO  - jmeter.threads.JMeterThread: Thread is done: Setup test enviorment 1-1 
+2016/11/28 11:55:50 INFO  - jmeter.threads.JMeterThread: Thread finished: Setup test enviorment 1-1 
+2016/11/28 11:55:50 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/11/28 11:55:50 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2016/11/28 11:56:35 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/11/28 11:56:35 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/11/28 11:56:35 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2016/11/28 11:56:35 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Setup test enviorment 
+2016/11/28 11:56:35 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Setup test enviorment. 
+2016/11/28 11:56:35 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 11:56:35 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 11:56:35 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/11/28 11:56:35 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2016/11/28 11:56:35 INFO  - jmeter.threads.JMeterThread: Thread started: Setup test enviorment 1-1 
+2016/11/28 11:57:15 INFO  - jmeter.gui.action.Start: Stopping test 
+2016/11/28 11:57:15 INFO  - jmeter.threads.JMeterThread: Stopping: Setup test enviorment 1-1 
+2016/11/28 11:57:15 WARN  - jmeter.threads.JMeterThread: Sampler is not Interruptible: Start a service which return 400 for global edge cache call 
+2016/11/28 11:57:15 INFO  - jmeter.threads.JMeterThread: Thread is done: Setup test enviorment 1-1 
+2016/11/28 11:57:15 INFO  - jmeter.threads.JMeterThread: Thread finished: Setup test enviorment 1-1 
+2016/11/28 11:57:15 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/11/28 11:57:15 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2016/11/28 11:58:05 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/11/28 11:58:05 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/11/28 11:58:05 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2016/11/28 11:58:05 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Setup test enviorment 
+2016/11/28 11:58:05 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Setup test enviorment. 
+2016/11/28 11:58:05 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 11:58:05 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 11:58:05 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/11/28 11:58:05 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2016/11/28 11:58:05 INFO  - jmeter.threads.JMeterThread: Thread started: Setup test enviorment 1-1 
+2016/11/28 11:59:17 INFO  - jmeter.gui.action.Start: Stopping test 
+2016/11/28 11:59:17 INFO  - jmeter.threads.JMeterThread: Stopping: Setup test enviorment 1-1 
+2016/11/28 11:59:17 WARN  - jmeter.threads.JMeterThread: Sampler is not Interruptible: Start a service which return 400 for global edge cache call 
+2016/11/28 11:59:17 INFO  - jmeter.threads.JMeterThread: Thread is done: Setup test enviorment 1-1 
+2016/11/28 11:59:17 INFO  - jmeter.threads.JMeterThread: Thread finished: Setup test enviorment 1-1 
+2016/11/28 11:59:17 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/11/28 11:59:17 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2016/11/28 11:59:31 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/11/28 11:59:31 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/11/28 11:59:31 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2016/11/28 11:59:31 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Setup test enviorment 
+2016/11/28 11:59:31 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Setup test enviorment. 
+2016/11/28 11:59:31 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 11:59:31 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 11:59:31 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/11/28 11:59:31 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Setup test enviorment to finish before starting next group 
+2016/11/28 11:59:31 INFO  - jmeter.threads.JMeterThread: Thread started: Setup test enviorment 1-1 
+2016/11/28 11:59:32 INFO  - jmeter.threads.JMeterThread: Thread is done: Setup test enviorment 1-1 
+2016/11/28 11:59:32 INFO  - jmeter.threads.JMeterThread: Thread finished: Setup test enviorment 1-1 
+2016/11/28 11:59:32 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 2 : Client send aac request for entertaiment A which has both dd+ and aac variant 
+2016/11/28 11:59:32 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Client send aac request for entertaiment A which has both dd+ and aac variant. 
+2016/11/28 11:59:32 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 11:59:32 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 2 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 11:59:32 INFO  - jmeter.threads.ThreadGroup: Started thread group number 2 
+2016/11/28 11:59:32 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Client send aac request for entertaiment A which has both dd+ and aac variant to finish before starting next group 
+2016/11/28 11:59:32 INFO  - jmeter.threads.JMeterThread: Thread started: Client send aac request for entertaiment A which has both dd+ and aac variant 2-1 
+2016/11/28 11:59:59 INFO  - jmeter.threads.JMeterThread: Thread is done: Client send aac request for entertaiment A which has both dd+ and aac variant 2-1 
+2016/11/28 11:59:59 INFO  - jmeter.threads.JMeterThread: Thread finished: Client send aac request for entertaiment A which has both dd+ and aac variant 2-1 
+2016/11/28 11:59:59 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 3 : Clear up test env 
+2016/11/28 11:59:59 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Clear up test env. 
+2016/11/28 11:59:59 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 11:59:59 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 3 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 11:59:59 INFO  - jmeter.threads.ThreadGroup: Started thread group number 3 
+2016/11/28 11:59:59 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2016/11/28 11:59:59 INFO  - jmeter.threads.JMeterThread: Thread started: Clear up test env 3-1 
+2016/11/28 11:59:59 INFO  - jmeter.threads.JMeterThread: Thread is done: Clear up test env 3-1 
+2016/11/28 11:59:59 INFO  - jmeter.threads.JMeterThread: Thread finished: Clear up test env 3-1 
+2016/11/28 11:59:59 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/11/28 11:59:59 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2016/11/28 12:06:45 INFO  - jmeter.gui.action.Load: Loading file: /Users/wangrong/VEX/Script/2.8/negative/T6VOD_adsMix_LargeManifestWith30Break60Ads.jmx 
+2016/11/28 12:06:45 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/negative' 
+2016/11/28 12:06:45 INFO  - jmeter.save.SaveService: Loading file: /Users/wangrong/VEX/Script/2.8/negative/T6VOD_adsMix_LargeManifestWith30Break60Ads.jmx 
+2016/11/28 12:06:45 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/negative' 
+2016/11/28 12:08:01 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/negative' 
+2016/11/28 12:53:00 INFO  - jmeter.gui.action.Load: Loading file: /Users/wangrong/VEX/Script/2.8/DDP/T6VOD_adsMix_PrimaryIsAllCodec_ClientRequestAACThenDDP.jmx 
+2016/11/28 12:53:00 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/DDP' 
+2016/11/28 12:53:00 INFO  - jmeter.save.SaveService: Loading file: /Users/wangrong/VEX/Script/2.8/DDP/T6VOD_adsMix_PrimaryIsAllCodec_ClientRequestAACThenDDP.jmx 
+2016/11/28 12:53:02 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/DDP' 
+2016/11/28 12:54:00 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script' 
+2016/11/28 12:54:07 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/11/28 12:54:07 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/11/28 12:54:07 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2016/11/28 12:54:07 INFO  - jmeter.engine.StandardJMeterEngine: Starting setUp thread groups 
+2016/11/28 12:54:07 INFO  - jmeter.engine.StandardJMeterEngine: Starting setUp ThreadGroup: 1 : Setup test envionment 
+2016/11/28 12:54:07 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Setup test envionment. 
+2016/11/28 12:54:07 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 12:54:07 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 12:54:07 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/11/28 12:54:07 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for all setup thread groups to exit 
+2016/11/28 12:54:07 INFO  - jmeter.threads.JMeterThread: Thread started: Setup test envionment 1-1 
+2016/11/28 12:54:08 INFO  - jmeter.threads.JMeterThread: Thread is done: Setup test envionment 1-1 
+2016/11/28 12:54:08 INFO  - jmeter.threads.JMeterThread: Thread finished: Setup test envionment 1-1 
+2016/11/28 12:54:08 INFO  - jmeter.engine.StandardJMeterEngine: All Setup Threads have ended 
+2016/11/28 12:54:08 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Client send aac request for entertaiment A which has both dd+ and aac variant 
+2016/11/28 12:54:08 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Client send aac request for entertaiment A which has both dd+ and aac variant. 
+2016/11/28 12:54:08 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 12:54:08 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 12:54:09 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/11/28 12:54:09 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Client send aac request for entertaiment A which has both dd+ and aac variant to finish before starting next group 
+2016/11/28 12:54:09 INFO  - jmeter.threads.JMeterThread: Thread started: Client send aac request for entertaiment A which has both dd+ and aac variant 1-1 
+2016/11/28 12:54:17 INFO  - jmeter.gui.action.Start: Stopping test 
+2016/11/28 12:54:17 INFO  - jmeter.threads.JMeterThread: Stopping: Client send aac request for entertaiment A which has both dd+ and aac variant 1-1 
+2016/11/28 12:54:17 WARN  - jmeter.threads.JMeterThread: Interrupting: Client send aac request for entertaiment A which has both dd+ and aac variant 1-1 sampler: Client send bitrate request for media 700K bandwidth profile 
+2016/11/28 12:54:17 WARN  - jmeter.util.JMeterUtils: Interrupted in thread Client send aac request for entertaiment A which has both dd+ and aac variant 1-1 java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at java.awt.EventQueue.invokeAndWait(EventQueue.java:1315)
+	at java.awt.EventQueue.invokeAndWait(EventQueue.java:1296)
+	at javax.swing.SwingUtilities.invokeAndWait(SwingUtilities.java:1348)
+	at org.apache.jmeter.util.JMeterUtils.runSafe(JMeterUtils.java:1322)
+	at org.apache.jmeter.visualizers.ViewResultsFullVisualizer.add(ViewResultsFullVisualizer.java:134)
+	at org.apache.jmeter.reporters.ResultCollector.sendToVisualizer(ResultCollector.java:595)
+	at org.apache.jmeter.reporters.ResultCollector.sampleOccurred(ResultCollector.java:571)
+	at org.apache.jmeter.threads.ListenerNotifier.notifyListeners(ListenerNotifier.java:84)
+	at org.apache.jmeter.threads.JMeterThread.notifyListeners(JMeterThread.java:796)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:456)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:261)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016/11/28 12:54:17 INFO  - jmeter.threads.JMeterThread: Thread finished: Client send aac request for entertaiment A which has both dd+ and aac variant 1-1 
+2016/11/28 12:54:17 INFO  - jmeter.engine.StandardJMeterEngine: Test stopped - no more thread groups will be started 
+2016/11/28 12:54:17 INFO  - jmeter.engine.StandardJMeterEngine: Starting tearDown thread groups 
+2016/11/28 12:54:17 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/11/28 12:54:17 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2016/11/28 12:55:46 INFO  - jmeter.gui.action.Load: Loading file: /Users/wangrong/VEX/Script/2.8/DDP/T6VOD_Default_PrimaryIsAllCodec_ClientRequestAACThenDDP.jmx 
+2016/11/28 12:55:46 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/DDP' 
+2016/11/28 12:55:46 INFO  - jmeter.save.SaveService: Loading file: /Users/wangrong/VEX/Script/2.8/DDP/T6VOD_Default_PrimaryIsAllCodec_ClientRequestAACThenDDP.jmx 
+2016/11/28 12:55:48 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/DDP' 
+2016/11/28 12:56:45 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/smokeTest' 
+2016/11/28 13:47:46 INFO  - jmeter.gui.action.Load: Loading file: /Users/wangrong/VEX/Script/2.8/DDP/T6VOD_adsMix_PrimaryIsAACOnly_ClientRequestAACThenDDP.jmx 
+2016/11/28 13:47:46 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/DDP' 
+2016/11/28 13:47:46 INFO  - jmeter.save.SaveService: Loading file: /Users/wangrong/VEX/Script/2.8/DDP/T6VOD_adsMix_PrimaryIsAACOnly_ClientRequestAACThenDDP.jmx 
+2016/11/28 13:47:47 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/DDP' 
+2016/11/28 13:48:04 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/smokeTest' 
+2016/11/28 13:48:25 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/11/28 13:48:25 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/11/28 13:48:25 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2016/11/28 13:48:25 INFO  - jmeter.engine.StandardJMeterEngine: Starting setUp thread groups 
+2016/11/28 13:48:25 INFO  - jmeter.engine.StandardJMeterEngine: Starting setUp ThreadGroup: 1 : Setup test envionment 
+2016/11/28 13:48:25 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Setup test envionment. 
+2016/11/28 13:48:25 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 13:48:25 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 13:48:25 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/11/28 13:48:25 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for all setup thread groups to exit 
+2016/11/28 13:48:25 INFO  - jmeter.threads.JMeterThread: Thread started: Setup test envionment 1-1 
+2016/11/28 13:48:26 INFO  - jmeter.threads.JMeterThread: Thread is done: Setup test envionment 1-1 
+2016/11/28 13:48:26 INFO  - jmeter.threads.JMeterThread: Thread finished: Setup test envionment 1-1 
+2016/11/28 13:48:26 INFO  - jmeter.engine.StandardJMeterEngine: All Setup Threads have ended 
+2016/11/28 13:48:26 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Client send aac request for entertaiment A which has only aac variant,Entertaiment has multiple audio track 
+2016/11/28 13:48:26 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Client send aac request for entertaiment A which has only aac variant,Entertaiment has multiple audio track. 
+2016/11/28 13:48:26 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 13:48:26 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 13:48:27 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/11/28 13:48:27 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Client send aac request for entertaiment A which has only aac variant,Entertaiment has multiple audio track to finish before starting next group 
+2016/11/28 13:48:27 INFO  - jmeter.threads.JMeterThread: Thread started: Client send aac request for entertaiment A which has only aac variant,Entertaiment has multiple audio track 1-1 
+2016/11/28 13:48:46 INFO  - jmeter.threads.JMeterThread: Thread is done: Client send aac request for entertaiment A which has only aac variant,Entertaiment has multiple audio track 1-1 
+2016/11/28 13:48:46 INFO  - jmeter.threads.JMeterThread: Thread finished: Client send aac request for entertaiment A which has only aac variant,Entertaiment has multiple audio track 1-1 
+2016/11/28 13:48:46 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 2 : Client send aac request for entertaiment B which has same PAID with A but different index name,Entertaiment has only one default audio track 
+2016/11/28 13:48:46 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Client send aac request for entertaiment B which has same PAID with A but different index name,Entertaiment has only one default audio track. 
+2016/11/28 13:48:46 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 13:48:46 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 2 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 13:48:46 INFO  - jmeter.threads.ThreadGroup: Started thread group number 2 
+2016/11/28 13:48:46 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Client send aac request for entertaiment B which has same PAID with A but different index name,Entertaiment has only one default audio track to finish before starting next group 
+2016/11/28 13:48:46 INFO  - jmeter.threads.JMeterThread: Thread started: Client send aac request for entertaiment B which has same PAID with A but different index name,Entertaiment has only one default audio track 2-1 
+2016/11/28 13:48:55 INFO  - jmeter.threads.JMeterThread: Thread is done: Client send aac request for entertaiment B which has same PAID with A but different index name,Entertaiment has only one default audio track 2-1 
+2016/11/28 13:48:55 INFO  - jmeter.threads.JMeterThread: Thread finished: Client send aac request for entertaiment B which has same PAID with A but different index name,Entertaiment has only one default audio track 2-1 
+2016/11/28 13:48:55 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 3 : Client send dd+ request for entertaiment A which has only aac variant 
+2016/11/28 13:48:55 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Client send dd+ request for entertaiment A which has only aac variant. 
+2016/11/28 13:48:55 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 13:48:55 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 3 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 13:48:55 INFO  - jmeter.threads.ThreadGroup: Started thread group number 3 
+2016/11/28 13:48:55 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Client send dd+ request for entertaiment A which has only aac variant to finish before starting next group 
+2016/11/28 13:48:55 INFO  - jmeter.threads.JMeterThread: Thread started: Client send dd+ request for entertaiment A which has only aac variant 3-1 
+2016/11/28 13:49:11 INFO  - jmeter.threads.JMeterThread: Thread is done: Client send dd+ request for entertaiment A which has only aac variant 3-1 
+2016/11/28 13:49:11 INFO  - jmeter.threads.JMeterThread: Thread finished: Client send dd+ request for entertaiment A which has only aac variant 3-1 
+2016/11/28 13:49:11 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 4 : Client send dd+ request for entertaiment B which has same PAID with A but different index name 
+2016/11/28 13:49:11 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Client send dd+ request for entertaiment B which has same PAID with A but different index name. 
+2016/11/28 13:49:11 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 13:49:11 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 4 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 13:49:12 INFO  - jmeter.threads.ThreadGroup: Started thread group number 4 
+2016/11/28 13:49:12 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Client send dd+ request for entertaiment B which has same PAID with A but different index name to finish before starting next group 
+2016/11/28 13:49:12 INFO  - jmeter.threads.JMeterThread: Thread started: Client send dd+ request for entertaiment B which has same PAID with A but different index name 4-1 
+2016/11/28 13:49:19 INFO  - jmeter.threads.JMeterThread: Thread is done: Client send dd+ request for entertaiment B which has same PAID with A but different index name 4-1 
+2016/11/28 13:49:19 INFO  - jmeter.threads.JMeterThread: Thread finished: Client send dd+ request for entertaiment B which has same PAID with A but different index name 4-1 
+2016/11/28 13:49:19 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2016/11/28 13:49:19 INFO  - jmeter.engine.StandardJMeterEngine: Starting tearDown thread groups 
+2016/11/28 13:49:19 INFO  - jmeter.engine.StandardJMeterEngine: Starting tearDown ThreadGroup: 1 : Clear up test envionment 
+2016/11/28 13:49:19 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Clear up test envionment. 
+2016/11/28 13:49:19 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 13:49:19 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 13:49:19 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/11/28 13:49:19 INFO  - jmeter.threads.JMeterThread: Thread started: Clear up test envionment 1-1 
+2016/11/28 13:49:19 INFO  - jmeter.threads.JMeterThread: Thread is done: Clear up test envionment 1-1 
+2016/11/28 13:49:19 INFO  - jmeter.threads.JMeterThread: Thread finished: Clear up test envionment 1-1 
+2016/11/28 13:49:19 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/11/28 13:49:19 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2016/11/28 14:25:56 INFO  - jmeter.gui.action.Load: Loading file: /Users/wangrong/VEX/Script/2.8/DDP/T6VOD_adsMix_PrimaryIsDDPOnly_ClientRequestAACThenDDP.jmx 
+2016/11/28 14:25:56 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/DDP' 
+2016/11/28 14:25:56 INFO  - jmeter.save.SaveService: Loading file: /Users/wangrong/VEX/Script/2.8/DDP/T6VOD_adsMix_PrimaryIsDDPOnly_ClientRequestAACThenDDP.jmx 
+2016/11/28 14:25:57 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/DDP' 
+2016/11/28 14:26:07 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/smokeTest' 
+2016/11/28 14:26:47 INFO  - jmeter.gui.action.Load: Loading file: /Users/wangrong/VEX/Script/2.8/DDP/T6VOD_adsMix_PrimaryIsAllCodec_AdIsAACOnly_AdIsStreamURLStartWithCCR.jmx 
+2016/11/28 14:26:47 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/DDP' 
+2016/11/28 14:26:47 INFO  - jmeter.save.SaveService: Loading file: /Users/wangrong/VEX/Script/2.8/DDP/T6VOD_adsMix_PrimaryIsAllCodec_AdIsAACOnly_AdIsStreamURLStartWithCCR.jmx 
+2016/11/28 14:26:48 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/DDP' 
+2016/11/28 14:27:24 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/smokeTest' 
+2016/11/28 14:27:44 INFO  - jmeter.gui.action.Load: Loading file: /Users/wangrong/VEX/Script/2.8/DDP/T6VOD_adsMix_PrimaryIsAllCodec_AdIsAACOnly_AdIsStreamURLNotStartWithCCR.jmx 
+2016/11/28 14:27:44 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/DDP' 
+2016/11/28 14:27:44 INFO  - jmeter.save.SaveService: Loading file: /Users/wangrong/VEX/Script/2.8/DDP/T6VOD_adsMix_PrimaryIsAllCodec_AdIsAACOnly_AdIsStreamURLNotStartWithCCR.jmx 
+2016/11/28 14:27:46 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/DDP' 
+2016/11/28 14:28:02 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/smokeTest' 
+2016/11/28 14:28:54 INFO  - jmeter.gui.action.Load: Loading file: /Users/wangrong/VEX/Script/2.8/DDP/T6VOD_adsMix_multipleAds_PrimaryIsAllCodec_ClientRequestAACThenDDP.jmx 
+2016/11/28 14:28:54 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/DDP' 
+2016/11/28 14:28:54 INFO  - jmeter.save.SaveService: Loading file: /Users/wangrong/VEX/Script/2.8/DDP/T6VOD_adsMix_multipleAds_PrimaryIsAllCodec_ClientRequestAACThenDDP.jmx 
+2016/11/28 14:28:55 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/DDP' 
+2016/11/28 14:29:04 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/11/28 14:29:04 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/11/28 14:29:04 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2016/11/28 14:29:04 INFO  - jmeter.engine.StandardJMeterEngine: Starting setUp thread groups 
+2016/11/28 14:29:04 INFO  - jmeter.engine.StandardJMeterEngine: Starting setUp ThreadGroup: 1 : Setup test envionment 
+2016/11/28 14:29:04 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Setup test envionment. 
+2016/11/28 14:29:04 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 14:29:04 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 14:29:04 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/11/28 14:29:04 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for all setup thread groups to exit 
+2016/11/28 14:29:04 INFO  - jmeter.threads.JMeterThread: Thread started: Setup test envionment 1-1 
+2016/11/28 14:29:05 INFO  - jmeter.threads.JMeterThread: Thread is done: Setup test envionment 1-1 
+2016/11/28 14:29:05 INFO  - jmeter.threads.JMeterThread: Thread finished: Setup test envionment 1-1 
+2016/11/28 14:29:05 INFO  - jmeter.engine.StandardJMeterEngine: All Setup Threads have ended 
+2016/11/28 14:29:06 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Client send aac request for entertaiment A which has both dd+ and aac variant 
+2016/11/28 14:29:06 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Client send aac request for entertaiment A which has both dd+ and aac variant. 
+2016/11/28 14:29:06 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 14:29:06 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 14:29:06 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/11/28 14:29:06 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Client send aac request for entertaiment A which has both dd+ and aac variant to finish before starting next group 
+2016/11/28 14:29:06 INFO  - jmeter.threads.JMeterThread: Thread started: Client send aac request for entertaiment A which has both dd+ and aac variant 1-1 
+2016/11/28 14:29:27 INFO  - jmeter.threads.JMeterThread: Thread is done: Client send aac request for entertaiment A which has both dd+ and aac variant 1-1 
+2016/11/28 14:29:27 INFO  - jmeter.threads.JMeterThread: Thread finished: Client send aac request for entertaiment A which has both dd+ and aac variant 1-1 
+2016/11/28 14:29:27 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 2 : Client send dd+ request for entertaiment A which has both dd+ and aac variant 
+2016/11/28 14:29:27 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Client send dd+ request for entertaiment A which has both dd+ and aac variant. 
+2016/11/28 14:29:27 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 14:29:27 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 2 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 14:29:27 INFO  - jmeter.threads.ThreadGroup: Started thread group number 2 
+2016/11/28 14:29:27 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Client send dd+ request for entertaiment A which has both dd+ and aac variant to finish before starting next group 
+2016/11/28 14:29:27 INFO  - jmeter.threads.JMeterThread: Thread started: Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1 
+2016/11/28 14:29:48 INFO  - jmeter.threads.JMeterThread: Thread is done: Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1 
+2016/11/28 14:29:48 INFO  - jmeter.threads.JMeterThread: Thread finished: Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1 
+2016/11/28 14:29:48 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2016/11/28 14:29:48 INFO  - jmeter.engine.StandardJMeterEngine: Starting tearDown thread groups 
+2016/11/28 14:29:48 INFO  - jmeter.engine.StandardJMeterEngine: Starting tearDown ThreadGroup: 1 : Clear up test envionment 
+2016/11/28 14:29:48 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Clear up test envionment. 
+2016/11/28 14:29:48 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 14:29:48 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 14:29:48 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/11/28 14:29:48 INFO  - jmeter.threads.JMeterThread: Thread started: Clear up test envionment 1-1 
+2016/11/28 14:29:49 INFO  - jmeter.threads.JMeterThread: Thread is done: Clear up test envionment 1-1 
+2016/11/28 14:29:49 INFO  - jmeter.threads.JMeterThread: Thread finished: Clear up test envionment 1-1 
+2016/11/28 14:29:49 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/11/28 14:29:49 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2016/11/28 14:31:12 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/smokeTest' 
+2016/11/28 14:40:32 INFO  - jmeter.gui.action.Load: Loading file: /Users/wangrong/VEX/Script/2.8/DDP/T6VOD_Default_PrimaryIsAllCodec_ClientRequestAACThenDDP.jmx 
+2016/11/28 14:40:32 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/DDP' 
+2016/11/28 14:40:32 INFO  - jmeter.save.SaveService: Loading file: /Users/wangrong/VEX/Script/2.8/DDP/T6VOD_Default_PrimaryIsAllCodec_ClientRequestAACThenDDP.jmx 
+2016/11/28 14:40:33 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/DDP' 
+2016/11/28 14:40:40 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/11/28 14:40:40 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/11/28 14:40:40 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2016/11/28 14:40:40 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Setup test enviorment 
+2016/11/28 14:40:40 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Setup test enviorment. 
+2016/11/28 14:40:40 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 14:40:40 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 14:40:40 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/11/28 14:40:40 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Setup test enviorment to finish before starting next group 
+2016/11/28 14:40:40 INFO  - jmeter.threads.JMeterThread: Thread started: Setup test enviorment 1-1 
+2016/11/28 14:40:41 INFO  - jmeter.threads.JMeterThread: Thread is done: Setup test enviorment 1-1 
+2016/11/28 14:40:41 INFO  - jmeter.threads.JMeterThread: Thread finished: Setup test enviorment 1-1 
+2016/11/28 14:40:41 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 2 : Client send aac request for entertaiment A which has both dd+ and aac variant 
+2016/11/28 14:40:41 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Client send aac request for entertaiment A which has both dd+ and aac variant. 
+2016/11/28 14:40:41 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 14:40:41 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 2 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 14:40:42 INFO  - jmeter.threads.ThreadGroup: Started thread group number 2 
+2016/11/28 14:40:42 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Client send aac request for entertaiment A which has both dd+ and aac variant to finish before starting next group 
+2016/11/28 14:40:42 INFO  - jmeter.threads.JMeterThread: Thread started: Client send aac request for entertaiment A which has both dd+ and aac variant 2-1 
+2016/11/28 14:41:25 INFO  - jmeter.threads.JMeterThread: Thread is done: Client send aac request for entertaiment A which has both dd+ and aac variant 2-1 
+2016/11/28 14:41:25 INFO  - jmeter.threads.JMeterThread: Thread finished: Client send aac request for entertaiment A which has both dd+ and aac variant 2-1 
+2016/11/28 14:41:25 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 3 : Client send aac request for entertaiment B which has same PAID with A but different index name 
+2016/11/28 14:41:25 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Client send aac request for entertaiment B which has same PAID with A but different index name. 
+2016/11/28 14:41:25 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 14:41:25 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 3 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 14:41:25 INFO  - jmeter.threads.ThreadGroup: Started thread group number 3 
+2016/11/28 14:41:25 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Client send aac request for entertaiment B which has same PAID with A but different index name to finish before starting next group 
+2016/11/28 14:41:25 INFO  - jmeter.threads.JMeterThread: Thread started: Client send aac request for entertaiment B which has same PAID with A but different index name 3-1 
+2016/11/28 14:41:27 INFO  - jmeter.threads.JMeterThread: Thread is done: Client send aac request for entertaiment B which has same PAID with A but different index name 3-1 
+2016/11/28 14:41:27 INFO  - jmeter.threads.JMeterThread: Thread finished: Client send aac request for entertaiment B which has same PAID with A but different index name 3-1 
+2016/11/28 14:41:27 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 4 : Client send dd+ request for entertaiment A which has both dd+ and aac variant 
+2016/11/28 14:41:27 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Client send dd+ request for entertaiment A which has both dd+ and aac variant. 
+2016/11/28 14:41:27 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 14:41:27 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 4 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 14:41:28 INFO  - jmeter.threads.ThreadGroup: Started thread group number 4 
+2016/11/28 14:41:28 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Client send dd+ request for entertaiment A which has both dd+ and aac variant to finish before starting next group 
+2016/11/28 14:41:28 INFO  - jmeter.threads.JMeterThread: Thread started: Client send dd+ request for entertaiment A which has both dd+ and aac variant 4-1 
+2016/11/28 14:41:38 INFO  - jmeter.threads.JMeterThread: Thread is done: Client send dd+ request for entertaiment A which has both dd+ and aac variant 4-1 
+2016/11/28 14:41:38 INFO  - jmeter.threads.JMeterThread: Thread finished: Client send dd+ request for entertaiment A which has both dd+ and aac variant 4-1 
+2016/11/28 14:41:38 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 5 : Client send dd+ request for entertaiment B which has same PAID with A but different index name 
+2016/11/28 14:41:38 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Client send dd+ request for entertaiment B which has same PAID with A but different index name. 
+2016/11/28 14:41:38 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 14:41:38 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 5 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 14:41:38 INFO  - jmeter.threads.ThreadGroup: Started thread group number 5 
+2016/11/28 14:41:38 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Client send dd+ request for entertaiment B which has same PAID with A but different index name to finish before starting next group 
+2016/11/28 14:41:38 INFO  - jmeter.threads.JMeterThread: Thread started: Client send dd+ request for entertaiment B which has same PAID with A but different index name 5-1 
+2016/11/28 14:41:42 INFO  - jmeter.threads.JMeterThread: Thread is done: Client send dd+ request for entertaiment B which has same PAID with A but different index name 5-1 
+2016/11/28 14:41:42 INFO  - jmeter.threads.JMeterThread: Thread finished: Client send dd+ request for entertaiment B which has same PAID with A but different index name 5-1 
+2016/11/28 14:41:42 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 6 : Clear up test env 
+2016/11/28 14:41:42 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Clear up test env. 
+2016/11/28 14:41:42 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 14:41:42 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 6 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 14:41:42 INFO  - jmeter.threads.ThreadGroup: Started thread group number 6 
+2016/11/28 14:41:42 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2016/11/28 14:41:42 INFO  - jmeter.threads.JMeterThread: Thread started: Clear up test env 6-1 
+2016/11/28 14:41:42 INFO  - jmeter.threads.JMeterThread: Thread is done: Clear up test env 6-1 
+2016/11/28 14:41:42 INFO  - jmeter.threads.JMeterThread: Thread finished: Clear up test env 6-1 
+2016/11/28 14:41:42 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/11/28 14:41:42 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2016/11/28 15:19:39 INFO  - jmeter.gui.action.Load: Loading file: /Users/wangrong/VEX/Script/2.8/negative/T6VOD_adsMix_LargeManifestWith30Break60Ads.jmx 
+2016/11/28 15:19:39 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/negative' 
+2016/11/28 15:19:39 INFO  - jmeter.save.SaveService: Loading file: /Users/wangrong/VEX/Script/2.8/negative/T6VOD_adsMix_LargeManifestWith30Break60Ads.jmx 
+2016/11/28 15:19:39 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/negative' 
+2016/11/28 15:22:03 INFO  - jmeter.gui.action.Load: Loading file: /Users/wangrong/VEX/Script/2.8/DDP/T6VOD_Default_PrimaryIsAllCodec_ClientRequestAACThenDDP.jmx 
+2016/11/28 15:22:03 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/DDP' 
+2016/11/28 15:22:03 INFO  - jmeter.save.SaveService: Loading file: /Users/wangrong/VEX/Script/2.8/DDP/T6VOD_Default_PrimaryIsAllCodec_ClientRequestAACThenDDP.jmx 
+2016/11/28 15:22:04 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.8/DDP' 
+2016/11/28 15:22:32 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2016/11/28 15:22:32 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [] 
+2016/11/28 15:22:32 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(true,*local*) 
+2016/11/28 15:22:33 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Setup test enviorment 
+2016/11/28 15:22:33 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Setup test enviorment. 
+2016/11/28 15:22:33 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 15:22:33 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 15:22:33 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2016/11/28 15:22:33 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Setup test enviorment to finish before starting next group 
+2016/11/28 15:22:33 INFO  - jmeter.threads.JMeterThread: Thread started: Setup test enviorment 1-1 
+2016/11/28 15:22:34 INFO  - jmeter.threads.JMeterThread: Thread is done: Setup test enviorment 1-1 
+2016/11/28 15:22:34 INFO  - jmeter.threads.JMeterThread: Thread finished: Setup test enviorment 1-1 
+2016/11/28 15:22:34 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 2 : Client send aac request for entertaiment A which has both dd+ and aac variant 
+2016/11/28 15:22:34 INFO  - jmeter.engine.StandardJMeterEngine: Starting 1 threads for group Client send aac request for entertaiment A which has both dd+ and aac variant. 
+2016/11/28 15:22:34 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2016/11/28 15:22:34 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 2 threads 1 ramp-up 1 perThread 1000.0 delayedStart=false 
+2016/11/28 15:22:34 INFO  - jmeter.threads.ThreadGroup: Started thread group number 2 
+2016/11/28 15:22:34 INFO  - jmeter.engine.StandardJMeterEngine: Waiting for thread group: Client send aac request for entertaiment A which has both dd+ and aac variant to finish before starting next group 
+2016/11/28 15:22:34 INFO  - jmeter.threads.JMeterThread: Thread started: Client send aac request for entertaiment A which has both dd+ and aac variant 2-1 
+2016/11/28 15:22:38 INFO  - jmeter.gui.action.Start: Stopping test 
+2016/11/28 15:22:38 INFO  - jmeter.threads.JMeterThread: Stopping: Client send aac request for entertaiment A which has both dd+ and aac variant 2-1 
+2016/11/28 15:22:38 WARN  - jmeter.threads.JMeterThread: Interrupting: Client send aac request for entertaiment A which has both dd+ and aac variant 2-1 sampler: Client send bitrate request for English audio track 100K bandwidth profile 
+2016/11/28 15:22:38 WARN  - jmeter.util.JMeterUtils: Interrupted in thread Client send aac request for entertaiment A which has both dd+ and aac variant 2-1 java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:502)
+	at java.awt.EventQueue.invokeAndWait(EventQueue.java:1315)
+	at java.awt.EventQueue.invokeAndWait(EventQueue.java:1296)
+	at javax.swing.SwingUtilities.invokeAndWait(SwingUtilities.java:1348)
+	at org.apache.jmeter.util.JMeterUtils.runSafe(JMeterUtils.java:1322)
+	at org.apache.jmeter.visualizers.ViewResultsFullVisualizer.add(ViewResultsFullVisualizer.java:134)
+	at org.apache.jmeter.reporters.ResultCollector.sendToVisualizer(ResultCollector.java:595)
+	at org.apache.jmeter.reporters.ResultCollector.sampleOccurred(ResultCollector.java:571)
+	at org.apache.jmeter.threads.ListenerNotifier.notifyListeners(ListenerNotifier.java:84)
+	at org.apache.jmeter.threads.JMeterThread.notifyListeners(JMeterThread.java:796)
+	at org.apache.jmeter.threads.JMeterThread.process_sampler(JMeterThread.java:456)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:261)
+	at java.lang.Thread.run(Thread.java:745)
+
+2016/11/28 15:22:38 INFO  - jmeter.threads.JMeterThread: Thread finished: Client send aac request for entertaiment A which has both dd+ and aac variant 2-1 
+2016/11/28 15:22:38 INFO  - jmeter.engine.StandardJMeterEngine: Test stopped - no more thread groups will be started 
+2016/11/28 15:22:38 INFO  - jmeter.engine.StandardJMeterEngine: Notifying test listeners of end of test 
+2016/11/28 15:22:38 INFO  - jmeter.gui.util.JMeterMenuBar: setRunning(false,*local*) 
+2016/11/28 16:28:11 INFO  - jmeter.gui.action.Load: Loading file: /Users/wangrong/VEX/Script/2.9/VEX_2.3_T6Linear_default_Manifest.jmx 
+2016/11/28 16:28:11 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.9' 
+2016/11/28 16:28:11 INFO  - jmeter.save.SaveService: Loading file: /Users/wangrong/VEX/Script/2.9/VEX_2.3_T6Linear_default_Manifest.jmx 
+2016/11/28 16:28:11 INFO  - jmeter.services.FileServer: Set new base='/Users/wangrong/VEX/Script/2.9' 

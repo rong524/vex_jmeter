@@ -1,0 +1,62 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,grpThreads,allThreads,Latency,IdleTime
+1480324443033,154,Reset asset data on origin server,200,OK,Setup test enviorment 1-1,text,true,,152,1,1,154,0
+1480324443198,66,Clear up encrypting information on origin server,200,OK,Setup test enviorment 1-1,text,true,,222,1,1,65,0
+1480324443266,118,Add encrypting information on the entertaiment ,200,OK,Setup test enviorment 1-1,text,true,,309,1,1,118,0
+1480324443386,116,add FXCMKey information on the entertaiment ,200,OK,Setup test enviorment 1-1,text,true,,9414,1,1,115,0
+1480324443506,123,Set placement resposne template on ads simulator,200,OK,Setup test enviorment 1-1,text,true,,198,1,1,122,0
+1480324443630,43,Check the entainment's master playlist on origin,200,OK,Setup test enviorment 1-1,,true,,2909,1,1,42,0
+1480324443686,60,Check the entainment's media playlist on origin server,200,OK,Setup test enviorment 1-1,,true,,11486,1,1,59,0
+1480324443748,91,Set global asset location redirect rule for one asset on content router simulator,200,OK,Setup test enviorment 1-1,text,true,,140,1,1,91,0
+1480324443842,57,Set client edge location redirect rule for Client IP/VID Asset combination  on content router simulator,200,OK,Setup test enviorment 1-1,text,true,,140,1,1,57,0
+1480324445233,268,Client send aac index request  ,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,72132,1,1,253,0
+1480324445515,91,Client send bitrate request for audio-only 20K bandwidth profile ,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,104218,1,1,84,0
+1480324445619,74,Client send bitrate request for audio-only 40K bandwidth profile ,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,11617,1,1,73,0
+1480324445702,73,Client send bitrate request for iframe 90K bandwidth profile ,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,11647,1,1,72,0
+1480324445783,78,Client send bitrate request for iframe 190K bandwidth profile ,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,11679,1,1,77,0
+1480324445868,76,Client send bitrate request for media 300K bandwidth profile ,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,11585,1,1,74,0
+1480324445952,81,Client send bitrate request for media 500K bandwidth profile ,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,11586,1,1,80,0
+1480324446038,80,Client send bitrate request for media 700K bandwidth profile ,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,11585,1,1,79,0
+1480324446124,92,Client send bitrate request for media 100K bandwidth profile ,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,11586,1,1,89,0
+1480324446221,80,Client send bitrate request for iframe 290K bandwidth profile ,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,11678,1,1,77,0
+1480324446305,78,Client send bitrate request for iframe 390K bandwidth profile,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,11679,1,1,77,0
+1480324446387,78,Client send bitrate request for English audio track 100K bandwidth profile,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,11677,1,1,77,0
+1480324446470,73,Client send bitrate request for Spanish audio track 100K bandwidth profile,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,11678,1,1,72,0
+1480324446548,78,Client send bitrate request for Chinese audio track 100K bandwidth profile,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,11677,1,1,77,0
+1480324446631,80,Client send bitrate request for English audio track 300K bandwidth profile,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,11678,1,1,77,0
+1480324446716,82,Client send bitrate request for English audio track 300K bandwidth profile,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,11677,1,1,81,0
+1480324446804,73,Client send bitrate request for Chinese audio track 100K bandwidth profile,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,11678,1,1,72,0
+1480324446883,76,Client send bitrate request for Spanish audio track 100K bandwidth profile,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,11677,1,1,75,0
+1480324446964,87,Client send bitrate request for English audio track 100K bandwidth profile,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,11678,1,1,85,0
+1480324447055,79,Client send bitrate request for Spanish audio track 300K bandwidth profile,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,11677,1,1,78,0
+1480324447138,79,Client send bitrate request for Japanese audio track 300K bandwidth profile,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,11678,1,1,78,0
+1480324447222,79,Client send bitrate request for English audio track 700K bandwidth profile,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,11677,1,1,78,0
+1480324447305,114,Client send bitrate request for Chinese audio track 700K bandwidth profile,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,11678,1,1,113,0
+1480324447424,3332,Client send bitrate request for Spanish audio track 700K bandwidth profile  whose media playlist is invalid on origin server,404,Not Found,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,817,1,1,3332,0
+1480324450757,80,Check placement request,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,1515,1,1,80,0
+1480324460846,83,Client post EndAll psn,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,,true,,148,1,1,83,0
+1480324470936,103,Client post EndAll psn,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,,true,,147,1,1,103,0
+1480324481043,110,Client post EndAll psn,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,,true,,147,1,1,110,0
+1480324487155,83,check EndAll PSN ,200,OK,Client send aac request for entertaiment A which has both dd+ and aac variant 2-1,text,true,,1233,1,1,83,0
+1480324488412,241,Client send aac index request  ,200,OK,Client send aac request for entertaiment B which has same PAID with A but different index name 3-1,text,true,,39710,1,1,238,0
+1480324488658,77,Client send bitrate request for audio-only 20K bandwidth profile,200,OK,Client send aac request for entertaiment B which has same PAID with A but different index name 3-1,text,true,,77153,1,1,75,0
+1480324488742,73,Client send bitrate request for audio-only 40K bandwidth profile,200,OK,Client send aac request for entertaiment B which has same PAID with A but different index name 3-1,text,true,,11669,1,1,72,0
+1480324488819,78,Client send bitrate request for iframe 90K bandwidth profile,200,OK,Client send aac request for entertaiment B which has same PAID with A but different index name 3-1,text,true,,11695,1,1,76,0
+1480324488902,74,Client send bitrate request for iframe 190K bandwidth profile,200,OK,Client send aac request for entertaiment B which has same PAID with A but different index name 3-1,text,true,,11723,1,1,73,0
+1480324488981,79,Client send bitrate request for media 300K bandwidth profile,200,OK,Client send aac request for entertaiment B which has same PAID with A but different index name 3-1,text,true,,11641,1,1,78,0
+1480324489065,85,Client send bitrate request for media 500K bandwidth profile,200,OK,Client send aac request for entertaiment B which has same PAID with A but different index name 3-1,text,true,,11642,1,1,83,0
+1480324489154,74,Client send bitrate request for media 700K bandwidth profile,200,OK,Client send aac request for entertaiment B which has same PAID with A but different index name 3-1,text,true,,11641,1,1,73,0
+1480324489232,128,Client send bitrate request for media 100K bandwidth profile,200,OK,Client send aac request for entertaiment B which has same PAID with A but different index name 3-1,text,true,,11642,1,1,127,0
+1480324489362,76,Client send bitrate request for iframe 290K bandwidth profile,200,OK,Client send aac request for entertaiment B which has same PAID with A but different index name 3-1,text,true,,11722,1,1,75,0
+1480324489442,78,Client send bitrate request for iframe 390K bandwidth profile,200,OK,Client send aac request for entertaiment B which has same PAID with A but different index name 3-1,text,true,,11723,1,1,76,0
+1480324489523,84,Client send bitrate request for English audio track 100K bandwidth profile,200,OK,Client send aac request for entertaiment B which has same PAID with A but different index name 3-1,text,true,,11576,1,1,83,0
+1480324489611,80,Check placement request,200,OK,Client send aac request for entertaiment B which has same PAID with A but different index name 3-1,text,true,,1515,1,1,80,0
+1480324499697,86,Client post EndAll psn,200,OK,Client send aac request for entertaiment B which has same PAID with A but different index name 3-1,,true,,148,1,1,86,0
+1480324509785,90,Client post EndAll psn,200,OK,Client send aac request for entertaiment B which has same PAID with A but different index name 3-1,,true,,147,1,1,90,0
+1480324519879,90,Client post EndAll psn,200,OK,Client send aac request for entertaiment B which has same PAID with A but different index name 3-1,,true,,148,1,1,90,0
+1480324525974,82,check EndAll PSN ,200,OK,Client send aac request for entertaiment B which has same PAID with A but different index name 3-1,text,true,,1233,1,1,81,0
+1480324526062,80,Clear placement response template on ads simulator,200,OK,Clear up test env 4-1,text,true,,184,1,1,80,0
+1480324526143,42,Clear placement request data which store in ads simulator,200,OK,Clear up test env 4-1,text,true,,141,1,1,42,0
+1480324526187,94,Reset origin server,200,OK,Clear up test env 4-1,text,true,,152,1,1,94,0
+1480324526282,55,Clear up encrypting information on origin server,200,OK,Clear up test env 4-1,text,true,,222,1,1,55,0
+1480324526338,42,Clear endAll message which store in ads simulator,200,OK,Clear up test env 4-1,text,true,,147,1,1,42,0
+1480324526381,81,Clear asset redirect rule on content router simulator,200,OK,Clear up test env 4-1,text,true,,116,1,1,81,0

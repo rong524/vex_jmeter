@@ -1,0 +1,1856 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.8" jmeter="2.13 r1665067">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="T6VOD_adsMix_PrimaryIsDDPOnly_ClientRequestDDPThenAAC" enabled="true">
+      <stringProp name="TestPlan.comments">Entertainment has only dd+ variant, Ad has both of aac and dd+ variant,PR has preRoll,midRoll,postRoll decision,Client request dd+ first then aac</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="Load server configuration" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="defaultOrigin_DNS" elementType="Argument">
+            <stringProp name="Argument.name">defaultOrigin_DNS</stringProp>
+            <stringProp name="Argument.value">${__P(default.origin.external.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="edge_1_DNS" elementType="Argument">
+            <stringProp name="Argument.name">edge_1_DNS</stringProp>
+            <stringProp name="Argument.value">${__P(edge_1.origin.external.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="edge_2_DNS" elementType="Argument">
+            <stringProp name="Argument.name">edge_2_DNS</stringProp>
+            <stringProp name="Argument.value">${__P(edge_2.origin.external.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="adContentServerDNS" elementType="Argument">
+            <stringProp name="Argument.name">adContentServerDNS</stringProp>
+            <stringProp name="Argument.value">${__P(adContent.external.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="adsServerDNS" elementType="Argument">
+            <stringProp name="Argument.name">adsServerDNS</stringProp>
+            <stringProp name="Argument.value">${__P(ads.simulater.external.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="acsServerDNS" elementType="Argument">
+            <stringProp name="Argument.name">acsServerDNS</stringProp>
+            <stringProp name="Argument.value">${__P(acs.external.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="core_vex_1_DNS" elementType="Argument">
+            <stringProp name="Argument.name">core_vex_1_DNS</stringProp>
+            <stringProp name="Argument.value">${__P(core.server_1.external.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="core_ui_DNS" elementType="Argument">
+            <stringProp name="Argument.name">core_ui_DNS</stringProp>
+            <stringProp name="Argument.value">${__P(core.ui.external.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="slrServerDNS" elementType="Argument">
+            <stringProp name="Argument.name">slrServerDNS</stringProp>
+            <stringProp name="Argument.value">${__P(slr.external.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="core_vex_2_DNS" elementType="Argument">
+            <stringProp name="Argument.name">core_vex_2_DNS</stringProp>
+            <stringProp name="Argument.value">${__P(core.server_2.external.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="frontEnd_1_DNS" elementType="Argument">
+            <stringProp name="Argument.name">frontEnd_1_DNS</stringProp>
+            <stringProp name="Argument.value">${__P(frontEnd.server_1.external.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="frontEnd_2_DNS" elementType="Argument">
+            <stringProp name="Argument.name">frontEnd_2_DNS</stringProp>
+            <stringProp name="Argument.value">${__P(frontEnd.server_2.external.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="director_1_DNS" elementType="Argument">
+            <stringProp name="Argument.name">director_1_DNS</stringProp>
+            <stringProp name="Argument.value">${__P(director.server_1.external.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="director_2_DNS" elementType="Argument">
+            <stringProp name="Argument.name">director_2_DNS</stringProp>
+            <stringProp name="Argument.value">${__P(director.server_2.external.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="layer7_DNS" elementType="Argument">
+            <stringProp name="Argument.name">layer7_DNS</stringProp>
+            <stringProp name="Argument.value">${__P(layer7.external.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="edge_1_IP" elementType="Argument">
+            <stringProp name="Argument.name">edge_1_IP</stringProp>
+            <stringProp name="Argument.value">${__P(edge_1.origin.internal.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="edge_2_IP" elementType="Argument">
+            <stringProp name="Argument.name">edge_2_IP</stringProp>
+            <stringProp name="Argument.value">${__P(edge_2.origin.internal.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="adContentServerIP" elementType="Argument">
+            <stringProp name="Argument.name">adContentServerIP</stringProp>
+            <stringProp name="Argument.value">${__P(adContent.internal.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="defaultOrigin_IP" elementType="Argument">
+            <stringProp name="Argument.name">defaultOrigin_IP</stringProp>
+            <stringProp name="Argument.value">${__P(default.origin.internal.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="frontEnd" elementType="Argument">
+            <stringProp name="Argument.name">frontEnd</stringProp>
+            <stringProp name="Argument.value">${__P(vod.frontEnd.hostname)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="coreServer" elementType="Argument">
+            <stringProp name="Argument.name">coreServer</stringProp>
+            <stringProp name="Argument.value">${__P(core.server_1.external.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="vinzIP" elementType="Argument">
+            <stringProp name="Argument.name">vinzIP</stringProp>
+            <stringProp name="Argument.value">${__P(vinz.external.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="acsIP" elementType="Argument">
+            <stringProp name="Argument.name">acsIP</stringProp>
+            <stringProp name="Argument.value">${__P(acs.external.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="crDNS" elementType="Argument">
+            <stringProp name="Argument.name">crDNS</stringProp>
+            <stringProp name="Argument.value">${__P(cr.external.IP)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="clientIp" elementType="Argument">
+            <stringProp name="Argument.name">clientIp</stringProp>
+            <stringProp name="Argument.value">${__Random(1,199,)}.${__Random(1,199,)}.${__Random(1,199,)}.1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="zone" elementType="Argument">
+            <stringProp name="Argument.name">zone</stringProp>
+            <stringProp name="Argument.value">vod_zone_${__Random(1,199,)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="StreamType" elementType="Argument">
+            <stringProp name="Argument.name">StreamType</stringProp>
+            <stringProp name="Argument.value">VOD_T6</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ProviderId" elementType="Argument">
+            <stringProp name="Argument.name">ProviderId</stringProp>
+            <stringProp name="Argument.value">16</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="AssetId" elementType="Argument">
+            <stringProp name="Argument.name">AssetId</stringProp>
+            <stringProp name="Argument.value">ddpo0000000000000000</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="DeviceId" elementType="Argument">
+            <stringProp name="Argument.name">DeviceId</stringProp>
+            <stringProp name="Argument.value">${__Random(1,199,)}.${__Random(1,199,)}.${__Random(1,199,)}.3</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="currentSequence" elementType="Argument">
+            <stringProp name="Argument.name">currentSequence</stringProp>
+            <stringProp name="Argument.value">0</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="vodName" elementType="Argument">
+            <stringProp name="Argument.name">vodName</stringProp>
+            <stringProp name="Argument.value">hq</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="vodLocation" elementType="Argument">
+            <stringProp name="Argument.name">vodLocation</stringProp>
+            <stringProp name="Argument.value">vod_primary/ddp</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad1" elementType="Argument">
+            <stringProp name="Argument.name">ad1</stringProp>
+            <stringProp name="Argument.value">vod_ad/allcodec</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad2" elementType="Argument">
+            <stringProp name="Argument.name">ad2</stringProp>
+            <stringProp name="Argument.value">vod_hq_ad/all_no_match</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad3" elementType="Argument">
+            <stringProp name="Argument.name">ad3</stringProp>
+            <stringProp name="Argument.value">vod_hq_ad/video_iframe_match</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad4" elementType="Argument">
+            <stringProp name="Argument.name">ad4</stringProp>
+            <stringProp name="Argument.value">vod_hq_ad/video_audio_match</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad5" elementType="Argument">
+            <stringProp name="Argument.name">ad5</stringProp>
+            <stringProp name="Argument.value">vod_hq_ad/video_only_match</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad6" elementType="Argument">
+            <stringProp name="Argument.name">ad6</stringProp>
+            <stringProp name="Argument.value">vod_hq_ad/all_MinVideoNotReachable</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad7" elementType="Argument">
+            <stringProp name="Argument.name">ad7</stringProp>
+            <stringProp name="Argument.value">vod_hq_ad/all_oneVideoNotReachable</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad8" elementType="Argument">
+            <stringProp name="Argument.name">ad8</stringProp>
+            <stringProp name="Argument.value">vod_hq_ad/all_MinAudioOnlyNotReachable</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad9" elementType="Argument">
+            <stringProp name="Argument.name">ad9</stringProp>
+            <stringProp name="Argument.value">vod_hq_ad/all_OneAudioOnlyNotReachable</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad10" elementType="Argument">
+            <stringProp name="Argument.name">ad10</stringProp>
+            <stringProp name="Argument.value">vod_hq_ad/all_MinIframeNotReachable</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad11" elementType="Argument">
+            <stringProp name="Argument.name">ad11</stringProp>
+            <stringProp name="Argument.value">vod_hq_ad/all_OneIframeNotReachable</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad12" elementType="Argument">
+            <stringProp name="Argument.name">ad12</stringProp>
+            <stringProp name="Argument.value">vod_hq_ad/all_match_header_key</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad13" elementType="Argument">
+            <stringProp name="Argument.name">ad13</stringProp>
+            <stringProp name="Argument.value">vod_hq_ad/all_match_multiple_key</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad14" elementType="Argument">
+            <stringProp name="Argument.name">ad14</stringProp>
+            <stringProp name="Argument.value">invalid_ad</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="keyFile_1" elementType="Argument">
+            <stringProp name="Argument.name">keyFile_1</stringProp>
+            <stringProp name="Argument.value">772000/enc/key.dat</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="keyFile_2" elementType="Argument">
+            <stringProp name="Argument.name">keyFile_2</stringProp>
+            <stringProp name="Argument.value">https://consecservice.ccp.xcal.tv.2</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="keyFile_3" elementType="Argument">
+            <stringProp name="Argument.name">keyFile_3</stringProp>
+            <stringProp name="Argument.value">https://consecservice.ccp.xcal.tv.3</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="keyFile_4" elementType="Argument">
+            <stringProp name="Argument.name">keyFile_4</stringProp>
+            <stringProp name="Argument.value">https://consecservice.ccp.xcal.tv.4</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="encryption_METHOD_1" elementType="Argument">
+            <stringProp name="Argument.name">encryption_METHOD_1</stringProp>
+            <stringProp name="Argument.value">AES-128</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="encryption_METHOD_2" elementType="Argument">
+            <stringProp name="Argument.name">encryption_METHOD_2</stringProp>
+            <stringProp name="Argument.value">SAMPLE-AES</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="encryption_METHOD_3" elementType="Argument">
+            <stringProp name="Argument.name">encryption_METHOD_3</stringProp>
+            <stringProp name="Argument.value">AES-128</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="encryption_METHOD_4" elementType="Argument">
+            <stringProp name="Argument.name">encryption_METHOD_4</stringProp>
+            <stringProp name="Argument.value">AES-128</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="IV_1" elementType="Argument">
+            <stringProp name="Argument.name">IV_1</stringProp>
+            <stringProp name="Argument.value">0x9c7db8778570d05c3177c349fd9236aa</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="IV_2" elementType="Argument">
+            <stringProp name="Argument.name">IV_2</stringProp>
+            <stringProp name="Argument.value">0xc055ee9f6c1eb7aa50bfab02b0814972</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="IV_3" elementType="Argument">
+            <stringProp name="Argument.name">IV_3</stringProp>
+            <stringProp name="Argument.value">0x9c7db8778570d05c3177c349fduy5667</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="IV_4" elementType="Argument">
+            <stringProp name="Argument.name">IV_4</stringProp>
+            <stringProp name="Argument.value">0x9c7db8778570d05c3177c34978900kl90</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="keyformatversion_1" elementType="Argument">
+            <stringProp name="Argument.name">keyformatversion_1</stringProp>
+            <stringProp name="Argument.value">1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="keyformat_1" elementType="Argument">
+            <stringProp name="Argument.name">keyformat_1</stringProp>
+            <stringProp name="Argument.value">apple</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="messageId" elementType="Argument">
+            <stringProp name="Argument.name">messageId</stringProp>
+            <stringProp name="Argument.value">msg_${__UUID}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="identityId" elementType="Argument">
+            <stringProp name="Argument.name">identityId</stringProp>
+            <stringProp name="Argument.value">ads_${__UUID}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="PartnerId" elementType="Argument">
+            <stringProp name="Argument.name">PartnerId</stringProp>
+            <stringProp name="Argument.value">private:Cox</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="client_dtz" elementType="Argument">
+            <stringProp name="Argument.name">client_dtz</stringProp>
+            <stringProp name="Argument.value">2015-02-01T11:25:45+05:00</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ServiceId" elementType="Argument">
+            <stringProp name="Argument.name">ServiceId</stringProp>
+            <stringProp name="Argument.value">VOD</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="client_dtz_ec" elementType="Argument">
+            <stringProp name="Argument.name">client_dtz_ec</stringProp>
+            <stringProp name="Argument.value">2015-02-01T11%3A25%3A45%2B05%3A00</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="PartnerId_ec" elementType="Argument">
+            <stringProp name="Argument.name">PartnerId_ec</stringProp>
+            <stringProp name="Argument.value">private%3ACox</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="keyNumber_expect" elementType="Argument">
+            <stringProp name="Argument.name">keyNumber_expect</stringProp>
+            <stringProp name="Argument.value">3</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NoneKeyNumber_expect" elementType="Argument">
+            <stringProp name="Argument.name">NoneKeyNumber_expect</stringProp>
+            <stringProp name="Argument.value">6</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Discontinuity_expect" elementType="Argument">
+            <stringProp name="Argument.name">Discontinuity_expect</stringProp>
+            <stringProp name="Argument.value">8</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="AdNumber_expect" elementType="Argument">
+            <stringProp name="Argument.name">AdNumber_expect</stringProp>
+            <stringProp name="Argument.value">6</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="PrimarySegmentsNumber_expect" elementType="Argument">
+            <stringProp name="Argument.name">PrimarySegmentsNumber_expect</stringProp>
+            <stringProp name="Argument.value">13</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="FaxsCMTag_expect" elementType="Argument">
+            <stringProp name="Argument.name">FaxsCMTag_expect</stringProp>
+            <stringProp name="Argument.value">4</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="audio_1" elementType="Argument">
+            <stringProp name="Argument.name">audio_1</stringProp>
+            <stringProp name="Argument.value">hq_audio_20</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="audio_2" elementType="Argument">
+            <stringProp name="Argument.name">audio_2</stringProp>
+            <stringProp name="Argument.value">hq_audio_40</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="iframe_1" elementType="Argument">
+            <stringProp name="Argument.name">iframe_1</stringProp>
+            <stringProp name="Argument.value">hq_iframe_90</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="iframe_2" elementType="Argument">
+            <stringProp name="Argument.name">iframe_2</stringProp>
+            <stringProp name="Argument.value">hq_iframe_190</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="iframe_3" elementType="Argument">
+            <stringProp name="Argument.name">iframe_3</stringProp>
+            <stringProp name="Argument.value">hq_iframe_290</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="iframe_4" elementType="Argument">
+            <stringProp name="Argument.name">iframe_4</stringProp>
+            <stringProp name="Argument.value">hq_iframe_390</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="video_1" elementType="Argument">
+            <stringProp name="Argument.name">video_1</stringProp>
+            <stringProp name="Argument.value">hq_med_105</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="video_2" elementType="Argument">
+            <stringProp name="Argument.name">video_2</stringProp>
+            <stringProp name="Argument.value">hq_med_300</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="video_3" elementType="Argument">
+            <stringProp name="Argument.name">video_3</stringProp>
+            <stringProp name="Argument.value">hq_med_500</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="video_4" elementType="Argument">
+            <stringProp name="Argument.name">video_4</stringProp>
+            <stringProp name="Argument.value">hq_med_700</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="resource_url" elementType="Argument">
+            <stringProp name="Argument.name">resource_url</stringProp>
+            <stringProp name="Argument.value">tt/all_sap/ddp</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="edge_resource_url" elementType="Argument">
+            <stringProp name="Argument.name">edge_resource_url</stringProp>
+            <stringProp name="Argument.value">com/allcodec</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad_resource_url" elementType="Argument">
+            <stringProp name="Argument.name">ad_resource_url</stringProp>
+            <stringProp name="Argument.value">ad/allcodec</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad_edge_resource_url" elementType="Argument">
+            <stringProp name="Argument.name">ad_edge_resource_url</stringProp>
+            <stringProp name="Argument.value">ad/com/allcodec</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="AssetId_2" elementType="Argument">
+            <stringProp name="Argument.name">AssetId_2</stringProp>
+            <stringProp name="Argument.value">abcd0123456789000009</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="vodLocation_2" elementType="Argument">
+            <stringProp name="Argument.name">vodLocation_2</stringProp>
+            <stringProp name="Argument.value">vod_hq/all_sap</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="resource_url_2" elementType="Argument">
+            <stringProp name="Argument.name">resource_url_2</stringProp>
+            <stringProp name="Argument.value">thistech/allsap/2</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="edge_resource_url_2" elementType="Argument">
+            <stringProp name="Argument.name">edge_resource_url_2</stringProp>
+            <stringProp name="Argument.value">allsap/comcast/edge2</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad_2_resource_url" elementType="Argument">
+            <stringProp name="Argument.name">ad_2_resource_url</stringProp>
+            <stringProp name="Argument.value">ad_2/comcast</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="AssetId_1" elementType="Argument">
+            <stringProp name="Argument.name">AssetId_1</stringProp>
+            <stringProp name="Argument.value">abcd0123456789000008</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="vodLocation_1" elementType="Argument">
+            <stringProp name="Argument.name">vodLocation_1</stringProp>
+            <stringProp name="Argument.value">vod_hq/all_sap</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="resource_url_1" elementType="Argument">
+            <stringProp name="Argument.name">resource_url_1</stringProp>
+            <stringProp name="Argument.value">thistech/all_sap/1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="edge_resource_url_1" elementType="Argument">
+            <stringProp name="Argument.name">edge_resource_url_1</stringProp>
+            <stringProp name="Argument.value">aa1/comcast/edge1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="sid" elementType="Argument">
+            <stringProp name="Argument.name">sid</stringProp>
+            <stringProp name="Argument.value">0</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad_host" elementType="Argument">
+            <stringProp name="Argument.name">ad_host</stringProp>
+            <stringProp name="Argument.value">tt.comcast.net:9000</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad_id" elementType="Argument">
+            <stringProp name="Argument.name">ad_id</stringProp>
+            <stringProp name="Argument.value">allc0000000000000000</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad_2_id" elementType="Argument">
+            <stringProp name="Argument.name">ad_2_id</stringProp>
+            <stringProp name="Argument.value">adad0123456789111112</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NPT_1_Start" elementType="Argument">
+            <stringProp name="Argument.name">NPT_1_Start</stringProp>
+            <stringProp name="Argument.value">5.11</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NPT_1_End" elementType="Argument">
+            <stringProp name="Argument.name">NPT_1_End</stringProp>
+            <stringProp name="Argument.value">15.12</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NPT_2_Start" elementType="Argument">
+            <stringProp name="Argument.name">NPT_2_Start</stringProp>
+            <stringProp name="Argument.value">21.13</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NPT_2_End" elementType="Argument">
+            <stringProp name="Argument.name">NPT_2_End</stringProp>
+            <stringProp name="Argument.value">29.141</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NPT_3_Start" elementType="Argument">
+            <stringProp name="Argument.name">NPT_3_Start</stringProp>
+            <stringProp name="Argument.value">39.1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NPT_3_End" elementType="Argument">
+            <stringProp name="Argument.name">NPT_3_End</stringProp>
+            <stringProp name="Argument.value">EOS</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad_postion_expect_video" elementType="Argument">
+            <stringProp name="Argument.name">ad_postion_expect_video</stringProp>
+            <stringProp name="Argument.value">0:5:5:9:9:13:13:13</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad_postion_expect_audio" elementType="Argument">
+            <stringProp name="Argument.name">ad_postion_expect_audio</stringProp>
+            <stringProp name="Argument.value">0:4:4:8:8:13:13:13</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NPT_1_Start_a" elementType="Argument">
+            <stringProp name="Argument.name">NPT_1_Start_a</stringProp>
+            <stringProp name="Argument.value">0</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NPT_1_End_a" elementType="Argument">
+            <stringProp name="Argument.name">NPT_1_End_a</stringProp>
+            <stringProp name="Argument.value">2.931</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NPT_2_Start_a" elementType="Argument">
+            <stringProp name="Argument.name">NPT_2_Start_a</stringProp>
+            <stringProp name="Argument.value">22</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NPT_2_End_a" elementType="Argument">
+            <stringProp name="Argument.name">NPT_2_End_a</stringProp>
+            <stringProp name="Argument.value">29.141</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NPT_3_Start_a" elementType="Argument">
+            <stringProp name="Argument.name">NPT_3_Start_a</stringProp>
+            <stringProp name="Argument.value">39.1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NPT_3_End_a" elementType="Argument">
+            <stringProp name="Argument.name">NPT_3_End_a</stringProp>
+            <stringProp name="Argument.value">EOS</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="keyNumber_expect_1" elementType="Argument">
+            <stringProp name="Argument.name">keyNumber_expect_1</stringProp>
+            <stringProp name="Argument.value">0</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NoneKeyNumber_expect_1" elementType="Argument">
+            <stringProp name="Argument.name">NoneKeyNumber_expect_1</stringProp>
+            <stringProp name="Argument.value">8</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Discontinuity_expect_1" elementType="Argument">
+            <stringProp name="Argument.name">Discontinuity_expect_1</stringProp>
+            <stringProp name="Argument.value">6</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="AdNumber_expect_1" elementType="Argument">
+            <stringProp name="Argument.name">AdNumber_expect_1</stringProp>
+            <stringProp name="Argument.value">4</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="PrimarySegmentsNumber_expect_1" elementType="Argument">
+            <stringProp name="Argument.name">PrimarySegmentsNumber_expect_1</stringProp>
+            <stringProp name="Argument.value">11</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad_postion_expect_1" elementType="Argument">
+            <stringProp name="Argument.name">ad_postion_expect_1</stringProp>
+            <stringProp name="Argument.value">0:2:2:7:7:11</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad_postion_expect_sap_1" elementType="Argument">
+            <stringProp name="Argument.name">ad_postion_expect_sap_1</stringProp>
+            <stringProp name="Argument.value">0:2:2:7:7:11</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NPT_1_Start_b" elementType="Argument">
+            <stringProp name="Argument.name">NPT_1_Start_b</stringProp>
+            <stringProp name="Argument.value">BOS</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NPT_1_End_b" elementType="Argument">
+            <stringProp name="Argument.name">NPT_1_End_b</stringProp>
+            <stringProp name="Argument.value">7.119</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NPT_2_Start_b" elementType="Argument">
+            <stringProp name="Argument.name">NPT_2_Start_b</stringProp>
+            <stringProp name="Argument.value">21.131</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NPT_2_End_b" elementType="Argument">
+            <stringProp name="Argument.name">NPT_2_End_b</stringProp>
+            <stringProp name="Argument.value">31.2</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NPT_3_Start_b" elementType="Argument">
+            <stringProp name="Argument.name">NPT_3_Start_b</stringProp>
+            <stringProp name="Argument.value">39.14</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="NPT_3_End_b" elementType="Argument">
+            <stringProp name="Argument.name">NPT_3_End_b</stringProp>
+            <stringProp name="Argument.value">EOS</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad_postion_expect_b" elementType="Argument">
+            <stringProp name="Argument.name">ad_postion_expect_b</stringProp>
+            <stringProp name="Argument.value">0:0:4:4:10:10:13</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="PrimarySegmentsNumber_expect_sap_b" elementType="Argument">
+            <stringProp name="Argument.name">PrimarySegmentsNumber_expect_sap_b</stringProp>
+            <stringProp name="Argument.value">14</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="ad_postion_expect_sap_b" elementType="Argument">
+            <stringProp name="Argument.name">ad_postion_expect_sap_b</stringProp>
+            <stringProp name="Argument.value">0:0:4:4:10:10:14</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="keyformat_2" elementType="Argument">
+            <stringProp name="Argument.name">keyformat_2</stringProp>
+            <stringProp name="Argument.value">chy</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie " enabled="true">
+        <collectionProp name="CookieManager.cookies">
+          <elementProp name="zone" elementType="Cookie" testname="zone">
+            <stringProp name="Cookie.value">${zone}</stringProp>
+            <stringProp name="Cookie.domain"></stringProp>
+            <stringProp name="Cookie.path"></stringProp>
+            <boolProp name="Cookie.secure">false</boolProp>
+            <longProp name="Cookie.expires">0</longProp>
+            <boolProp name="Cookie.path_specified">true</boolProp>
+            <boolProp name="Cookie.domain_specified">true</boolProp>
+          </elementProp>
+        </collectionProp>
+        <boolProp name="CookieManager.clearEachIteration">true</boolProp>
+        <stringProp name="CookieManager.policy">netscape</stringProp>
+      </CookieManager>
+      <hashTree/>
+      <SetupThreadGroup guiclass="SetupThreadGroupGui" testclass="SetupThreadGroup" testname="Setup test envionment" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1388991662000</longProp>
+        <longProp name="ThreadGroup.end_time">1388991662000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </SetupThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/xml</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">X-Forwarded-For</stringProp>
+              <stringProp name="Header.value">${clientIp}</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">channelType</stringProp>
+              <stringProp name="Header.value">Vod</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">zone</stringProp>
+              <stringProp name="Header.value">${zone}</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">timebase</stringProp>
+              <stringProp name="Header.value">true</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Reset asset data on origin server" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${defaultOrigin_DNS}</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/origin/api/vodcdvrAds/reset</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="TestPlan.comments">Reset content data on origin server</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify reponse code should be 200" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="2524">OK</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="TestPlan.comments">Verify reponse code should be 200</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Clear up encrypting information on origin server" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${defaultOrigin_DNS}</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">origin/api/extKey/sliced/clearAll</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify reponse code should be 200" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="2524">OK</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="TestPlan.comments">Verify reponse code should be 200</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Add encrypting information on the entertaiment " enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot;?&gt;&#xd;
+     &lt;EXTKeySettings&gt;&#xd;
+         &lt;EXTKeySetting&gt;&#xd;
+            &lt;position&gt;3&lt;/position&gt;&#xd;
+            &lt;method&gt;${encryption_METHOD_1}&lt;/method&gt;&#xd;
+           &lt;URI&gt;${keyFile_1}&lt;/URI&gt;&#xd;
+            &lt;IV&gt;${IV_1}&lt;/IV&gt;&#xd;
+            &lt;KEYFORMAT&gt;${keyformat_1}&lt;/KEYFORMAT&gt;&#xd;
+            &lt;KEYFORMATVERSIONS&gt;${keyformatversion_1}&lt;/KEYFORMATVERSIONS&gt;&#xd;
+         &lt;/EXTKeySetting&gt;&#xd;
+     &lt;/EXTKeySettings&gt;&#xd;
+</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${defaultOrigin_DNS}</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">origin/api/extKey/header?assetName=${vodLocation}</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify reponse code should be 200" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="2524">OK</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="TestPlan.comments">Verify reponse code should be 200</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Set placement resposne template on ads simulator" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot;?&gt;&#xd;
+&lt;adm:PlacementResponse xmlns:ns18=&quot;http://www.thistech.com/schemas/1_0/opportunity&quot;&#xd;
+	xmlns:title=&quot;urn:cablelabs:md:xsd:title:3.0&quot; xmlns:terms=&quot;urn:cablelabs:md:xsd:terms:3.0&quot;&#xd;
+	xmlns:content=&quot;urn:cablelabs:md:xsd:content:3.0&quot; xmlns:offer=&quot;urn:cablelabs:md:xsd:offer:3.0&quot;&#xd;
+	xmlns:signaling=&quot;urn:cablelabs:md:xsd:signaling:3.0&quot; xmlns:po=&quot;urn:cablelabs:md:xsd:placementopportunity:3.0&quot;&#xd;
+	xmlns:adi3=&quot;urn:cablelabs:md:xsd:core:3.0&quot; xmlns:pois=&quot;http://www.scte.org/schemas/130-5/2010/pois&quot;&#xd;
+	xmlns:tbtv=&quot;http://www.tandbergtv.com/schemas/130-ext/2008a/ext&quot;&#xd;
+	xmlns:gis=&quot;http://www.scte.org/schemas/130-8/2010a/gis&quot; xmlns:podm=&quot;http://www.scte.org/schemas/130-3/2008a/adm/podm&quot;&#xd;
+	xmlns:slr=&quot;http://www.thistech.com/schemas/1_0/spotlink&quot; xmlns:vmap=&quot;http://www.iab.net/vmap-1.0&quot;&#xd;
+	xmlns:core=&quot;http://www.scte.org/schemas/130-2/2008a/core&quot; xmlns:adm=&quot;http://www.scte.org/schemas/130-3/2008a/adm&quot;&#xd;
+	xmlns:cmcp1=&quot;http://www.comcast.com/schemas/NGOD/P1/2012/R1V0&quot;&#xd;
+	xmlns:cmcst=&quot;http://www.comcast.com/schemas/NGOD/P1/2012/R1V0&quot;&#xd;
+	messageRef=&quot;caef9c27-a10a-44b2-9b2d-1ce13be9866a&quot; messageId=&quot;${messageId}&quot;&#xd;
+	version=&quot;1.1&quot; identity=&quot;${identityId}&quot; system=&quot;spotlink-auditude-support&quot;&gt;&#xd;
+	&lt;core:StatusCode class=&quot;0&quot; /&gt;&#xd;
+	&lt;adm:PlacementDecision id=&quot;V3dVSDRQSmlFZU9vL0JEZHNkdmYzUT09&quot;&#xd;
+		placementOpportunityRef=&quot;request-poid&quot;&gt;&#xd;
+		&lt;adm:OpportunityBinding opportunityType=&quot;preRoll&quot;&#xd;
+			opportunityNumber=&quot;1&quot; /&gt;&#xd;
+		&lt;adm:Placement id=&quot;V3dVSDR2SmlFZU9vL0JEZHNkdmYzUT09&quot;&#xd;
+			action=&quot;fill&quot; position=&quot;1&quot; type=&quot;private:vastLinearExt&quot;&gt;&#xd;
+			&lt;core:Content&gt;&#xd;
+				 &lt;core:AssetRef providerID=&quot;ad.com&quot; assetID=&quot;${ad_id}&quot;/&gt;&#xd;
+				&lt;core:ContentLocation contentType=&quot;application/x-mpegURL&quot;&gt;http://${ad_host}/${ad_resource_url}/index.cy&#xd;
+				&lt;/core:ContentLocation&gt;&#xd;
+				&lt;core:Duration&gt;PT0H0M15S&lt;/core:Duration&gt;&#xd;
+				&lt;core:Tracking&gt;tracking-id&lt;/core:Tracking&gt;&#xd;
+				&lt;core:Ext /&gt;&#xd;
+			&lt;/core:Content&gt;&#xd;
+			&lt;PlacementConstraints&gt;&#xd;
+				&lt;core:Ext&gt;&#xd;
+					&lt;cmcst:PlacementConstraintsExt&gt;&#xd;
+						&lt;cmcst:TrickModeRestriction trickMode=&quot;fastForward&quot;&#xd;
+							scale=&quot;2&quot;&gt;Always&lt;/cmcst:TrickModeRestriction&gt;&#xd;
+						&lt;cmcst:TrickModeRestriction trickMode=&quot;fastForward&quot;&#xd;
+							scale=&quot;3&quot;&gt;4&lt;/cmcst:TrickModeRestriction&gt;&#xd;
+						&lt;cmcst:TrickModeRestriction trickMode=&quot;pause&quot;&gt;Always&lt;/cmcst:TrickModeRestriction&gt;&#xd;
+					&lt;/cmcst:PlacementConstraintsExt&gt;&#xd;
+				&lt;/core:Ext&gt;&#xd;
+			&lt;/PlacementConstraints&gt;&#xd;
+		&lt;/adm:Placement&gt;&#xd;
+			&lt;/adm:PlacementDecision&gt;&#xd;
+&#xd;
+	&lt;adm:PlacementDecision id=&quot;V3dVdTh2SmlFZU9vL0JEZHNkdmYzUT09&quot;&gt;&#xd;
+		&lt;adm:Entertainment&gt;&#xd;
+			&lt;core:Content&gt;&#xd;
+				&lt;core:AssetRef providerID=&quot;xidio&quot;&#xd;
+					assetID=&quot;04a436853d442f7edb27c9382146f9ec&quot; /&gt;&#xd;
+			&lt;/core:Content&gt;&#xd;
+			&lt;adm:EntertainmentNPT scale=&quot;1.0&quot;&gt;${NPT_1_Start}-${NPT_1_End}&#xd;
+			&lt;/adm:EntertainmentNPT&gt;&#xd;
+		&lt;/adm:Entertainment&gt;&#xd;
+		&lt;core:Ext&gt;&#xd;
+			&lt;cmcp1:PlayPositions&gt;&#xd;
+				&lt;cmcp1:PlayPositionStart&gt;&#xd;
+					&lt;cmcp1:NPTOffset&gt;0.000&lt;/cmcp1:NPTOffset&gt;&#xd;
+				&lt;/cmcp1:PlayPositionStart&gt;&#xd;
+				&lt;cmcp1:PlayPositionEnd&gt;&#xd;
+					&lt;cmcp1:NPTOffset&gt;36.000&lt;/cmcp1:NPTOffset&gt;&#xd;
+				&lt;/cmcp1:PlayPositionEnd&gt;&#xd;
+			&lt;/cmcp1:PlayPositions&gt;&#xd;
+		&lt;/core:Ext&gt;&#xd;
+	&lt;/adm:PlacementDecision&gt;&#xd;
+	&lt;adm:PlacementDecision id=&quot;V3dWV0FQSmlFZU9vL0JEZHNkdmYzUT09&quot;&#xd;
+		placementOpportunityRef=&quot;request-poid&quot;&gt;&#xd;
+		&lt;adm:OpportunityBinding opportunityType=&quot;private:midRoll&quot;&#xd;
+			opportunityNumber=&quot;3&quot; /&gt;&#xd;
+		&lt;adm:Placement id=&quot;V3dWV0F2SmlFZU9vL0JEZHNkdmYzUT09&quot;&#xd;
+			action=&quot;fill&quot; position=&quot;1&quot; type=&quot;private:vastLinearExt&quot;&gt;&#xd;
+			&lt;core:Content&gt;&#xd;
+				&lt;core:AssetRef providerID=&quot;ad.com&quot; assetID=&quot;${ad_id}&quot;/&gt;&#xd;
+				&lt;core:ContentLocation contentType=&quot;application/x-mpegURL&quot;&gt;http://${ad_host}/${ad_resource_url}/index.cy&#xd;
+				&lt;/core:ContentLocation&gt;&#xd;
+				&lt;core:Duration&gt;PT0H0M15S&lt;/core:Duration&gt;&#xd;
+				&lt;core:Tracking&gt;tracking-id&lt;/core:Tracking&gt;&#xd;
+				&lt;core:Ext /&gt;&#xd;
+			&lt;/core:Content&gt;&#xd;
+			&lt;PlacementConstraints&gt;&#xd;
+				&lt;core:Ext&gt;&#xd;
+					&lt;cmcst:PlacementConstraintsExt&gt;&#xd;
+						&lt;cmcst:TrickModeRestriction trickMode=&quot;fastForward&quot;&#xd;
+							scale=&quot;2&quot;&gt;Always&lt;/cmcst:TrickModeRestriction&gt;&#xd;
+						&lt;cmcst:TrickModeRestriction trickMode=&quot;fastForward&quot;&#xd;
+							scale=&quot;3&quot;&gt;4&lt;/cmcst:TrickModeRestriction&gt;&#xd;
+						&lt;cmcst:TrickModeRestriction trickMode=&quot;pause&quot;&gt;Always&lt;/cmcst:TrickModeRestriction&gt;&#xd;
+					&lt;/cmcst:PlacementConstraintsExt&gt;&#xd;
+				&lt;/core:Ext&gt;&#xd;
+			&lt;/PlacementConstraints&gt;&#xd;
+		&lt;/adm:Placement&gt;&#xd;
+	&lt;/adm:PlacementDecision&gt;&#xd;
+	&#xd;
+	&lt;adm:PlacementDecision id=&quot;V3dVdTh2SmlFZU9vL0JEZHNkdmYzUT09&quot;&gt;&#xd;
+		&lt;adm:Entertainment&gt;&#xd;
+			&lt;core:Content&gt;&#xd;
+				&lt;core:AssetRef providerID=&quot;xidio&quot;&#xd;
+					assetID=&quot;04a436853d442f7edb27c9382146f9ec&quot; /&gt;&#xd;
+			&lt;/core:Content&gt;&#xd;
+			&lt;adm:EntertainmentNPT scale=&quot;1.0&quot;&gt;${NPT_2_Start}-${NPT_2_End}&#xd;
+			&lt;/adm:EntertainmentNPT&gt;&#xd;
+		&lt;/adm:Entertainment&gt;&#xd;
+		&lt;core:Ext&gt;&#xd;
+			&lt;cmcp1:PlayPositions&gt;&#xd;
+				&lt;cmcp1:PlayPositionStart&gt;&#xd;
+					&lt;cmcp1:NPTOffset&gt;50.000&lt;/cmcp1:NPTOffset&gt;&#xd;
+				&lt;/cmcp1:PlayPositionStart&gt;&#xd;
+				&lt;cmcp1:PlayPositionEnd&gt;&#xd;
+					&lt;cmcp1:NPTOffset&gt;60.000&lt;/cmcp1:NPTOffset&gt;&#xd;
+				&lt;/cmcp1:PlayPositionEnd&gt;&#xd;
+			&lt;/cmcp1:PlayPositions&gt;&#xd;
+		&lt;/core:Ext&gt;&#xd;
+	&lt;/adm:PlacementDecision&gt;&#xd;
+	&lt;adm:PlacementDecision id=&quot;W3dWV0FQSmlFZU9vL0JEZHNkdmYzUT09&quot;&#xd;
+		placementOpportunityRef=&quot;request-poid&quot;&gt;&#xd;
+		&lt;adm:OpportunityBinding opportunityType=&quot;private:midRoll&quot;&#xd;
+			opportunityNumber=&quot;5&quot; /&gt;&#xd;
+		&lt;adm:Placement id=&quot;W3dWOUVmSmlFZU9vL0JEZHNkdmYzUT09&quot;&#xd;
+			action=&quot;fill&quot; position=&quot;2&quot; type=&quot;private:vastLinearExt&quot;&gt;&#xd;
+			&lt;core:Content&gt;&#xd;
+				&lt;core:AssetRef providerID=&quot;ad.com&quot; assetID=&quot;${ad_id}&quot;/&gt;&#xd;
+				&lt;core:ContentLocation contentType=&quot;application/x-mpegURL&quot;&gt;http://${ad_host}/${ad_resource_url}/index.cy&#xd;
+				&lt;/core:ContentLocation&gt;&#xd;
+				&lt;core:Duration&gt;PT0H0M15S&lt;/core:Duration&gt;&#xd;
+				&lt;core:Tracking&gt;tracking-id&lt;/core:Tracking&gt;&#xd;
+				&lt;core:Ext /&gt;&#xd;
+			&lt;/core:Content&gt;&#xd;
+			&lt;PlacementConstraints&gt;&#xd;
+				&lt;core:Ext&gt;&#xd;
+					&lt;cmcst:PlacementConstraintsExt&gt;&#xd;
+						&lt;cmcst:TrickModeRestriction trickMode=&quot;fastForward&quot;&#xd;
+							scale=&quot;2&quot;&gt;Always&lt;/cmcst:TrickModeRestriction&gt;&#xd;
+						&lt;cmcst:TrickModeRestriction trickMode=&quot;fastForward&quot;&#xd;
+							scale=&quot;3&quot;&gt;4&lt;/cmcst:TrickModeRestriction&gt;&#xd;
+						&lt;cmcst:TrickModeRestriction trickMode=&quot;pause&quot;&gt;Always&lt;/cmcst:TrickModeRestriction&gt;&#xd;
+					&lt;/cmcst:PlacementConstraintsExt&gt;&#xd;
+				&lt;/core:Ext&gt;&#xd;
+			&lt;/PlacementConstraints&gt;&#xd;
+		&lt;/adm:Placement&gt;&#xd;
+	&lt;/adm:PlacementDecision&gt;&#xd;
+	&#xd;
+		&lt;adm:PlacementDecision id=&quot;V3dVdTh2SmlFZU9vL0JEZHNkdmYzUT09&quot;&gt;&#xd;
+		&lt;adm:Entertainment&gt;&#xd;
+			&lt;core:Content&gt;&#xd;
+				&lt;core:AssetRef providerID=&quot;xidio&quot;&#xd;
+					assetID=&quot;04a436853d442f7edb27c9382146f9ec&quot; /&gt;&#xd;
+			&lt;/core:Content&gt;&#xd;
+			&lt;adm:EntertainmentNPT scale=&quot;1.0&quot;&gt;${NPT_3_Start}-${NPT_3_End}&#xd;
+			&lt;/adm:EntertainmentNPT&gt;&#xd;
+		&lt;/adm:Entertainment&gt;&#xd;
+		&lt;core:Ext&gt;&#xd;
+			&lt;cmcp1:PlayPositions&gt;&#xd;
+				&lt;cmcp1:PlayPositionStart&gt;&#xd;
+					&lt;cmcp1:NPTOffset&gt;60.000&lt;/cmcp1:NPTOffset&gt;&#xd;
+				&lt;/cmcp1:PlayPositionStart&gt;&#xd;
+			&lt;/cmcp1:PlayPositions&gt;&#xd;
+		&lt;/core:Ext&gt;&#xd;
+	&lt;/adm:PlacementDecision&gt;&#xd;
+	&lt;adm:PlacementDecision id=&quot;W3dWV0FQSmlFZU9vL0JEZHNkdmYzUT09&quot;&#xd;
+		placementOpportunityRef=&quot;request-poid&quot;&gt;&#xd;
+		&lt;adm:OpportunityBinding opportunityType=&quot;private:midRoll&quot;&#xd;
+			opportunityNumber=&quot;5&quot; /&gt;&#xd;
+		&lt;adm:Placement id=&quot;W3dWOUVmSmlFZU9vL0JEZHNkdmYzUT09&quot;&#xd;
+			action=&quot;fill&quot; position=&quot;2&quot; type=&quot;private:vastLinearExt&quot;&gt;&#xd;
+			&lt;core:Content&gt;&#xd;
+				&lt;core:AssetRef providerID=&quot;ad.com&quot; assetID=&quot;${ad_id}&quot;/&gt;&#xd;
+				&lt;core:ContentLocation contentType=&quot;application/x-mpegURL&quot;&gt;http://${ad_host}/${ad_resource_url}/index.cy&#xd;
+				&lt;/core:ContentLocation&gt;&#xd;
+				&lt;core:Duration&gt;PT0H0M15S&lt;/core:Duration&gt;&#xd;
+				&lt;core:Tracking&gt;tracking-id&lt;/core:Tracking&gt;&#xd;
+				&lt;core:Ext /&gt;&#xd;
+			&lt;/core:Content&gt;&#xd;
+			&lt;PlacementConstraints&gt;&#xd;
+				&lt;core:Ext&gt;&#xd;
+					&lt;cmcst:PlacementConstraintsExt&gt;&#xd;
+						&lt;cmcst:TrickModeRestriction trickMode=&quot;fastForward&quot;&#xd;
+							scale=&quot;2&quot;&gt;Always&lt;/cmcst:TrickModeRestriction&gt;&#xd;
+						&lt;cmcst:TrickModeRestriction trickMode=&quot;fastForward&quot;&#xd;
+							scale=&quot;3&quot;&gt;4&lt;/cmcst:TrickModeRestriction&gt;&#xd;
+						&lt;cmcst:TrickModeRestriction trickMode=&quot;pause&quot;&gt;Always&lt;/cmcst:TrickModeRestriction&gt;&#xd;
+					&lt;/cmcst:PlacementConstraintsExt&gt;&#xd;
+				&lt;/core:Ext&gt;&#xd;
+			&lt;/PlacementConstraints&gt;&#xd;
+		&lt;/adm:Placement&gt;&#xd;
+	&lt;/adm:PlacementDecision&gt;&#xd;
+	&#xd;
+	&#xd;
+		&lt;adm:PlacementDecision id=&quot;V3dVdTh2SmlFZU9vL0JEZHNkdmYzUT09&quot;&gt;&#xd;
+		&lt;adm:Entertainment&gt;&#xd;
+			&lt;core:Content&gt;&#xd;
+				&lt;core:AssetRef providerID=&quot;xidio&quot;&#xd;
+					assetID=&quot;04a436853d442f7edb27c9382146f9ec&quot; /&gt;&#xd;
+			&lt;/core:Content&gt;&#xd;
+			&lt;adm:EntertainmentNPT scale=&quot;1.0&quot;&gt;${NPT_4_Start}-${NPT_4_End}&#xd;
+			&lt;/adm:EntertainmentNPT&gt;&#xd;
+		&lt;/adm:Entertainment&gt;&#xd;
+		&lt;core:Ext&gt;&#xd;
+			&lt;cmcp1:PlayPositions&gt;&#xd;
+				&lt;cmcp1:PlayPositionStart&gt;&#xd;
+					&lt;cmcp1:NPTOffset&gt;60.000&lt;/cmcp1:NPTOffset&gt;&#xd;
+				&lt;/cmcp1:PlayPositionStart&gt;&#xd;
+			&lt;/cmcp1:PlayPositions&gt;&#xd;
+		&lt;/core:Ext&gt;&#xd;
+	&lt;/adm:PlacementDecision&gt;&#xd;
+	&lt;adm:PlacementDecision id=&quot;W3dWV0FQSmlFZU9vL0JEZHNkdmYzUT09&quot;&#xd;
+		placementOpportunityRef=&quot;request-poid&quot;&gt;&#xd;
+		&lt;adm:OpportunityBinding opportunityType=&quot;private:midRoll&quot;&#xd;
+			opportunityNumber=&quot;5&quot; /&gt;&#xd;
+		&lt;adm:Placement id=&quot;W3dWOUVmSmlFZU9vL0JEZHNkdmYzUT09&quot;&#xd;
+			action=&quot;fill&quot; position=&quot;2&quot; type=&quot;private:vastLinearExt&quot;&gt;&#xd;
+			&lt;core:Content&gt;&#xd;
+				&lt;core:AssetRef providerID=&quot;ad.com&quot; assetID=&quot;${ad_id}&quot;/&gt;&#xd;
+				&lt;core:ContentLocation contentType=&quot;application/x-mpegURL&quot;&gt;http://${ad_host}/${ad_resource_url}/index.cy&#xd;
+				&lt;/core:ContentLocation&gt;&#xd;
+				&lt;core:Duration&gt;PT0H0M15S&lt;/core:Duration&gt;&#xd;
+				&lt;core:Tracking&gt;tracking-id&lt;/core:Tracking&gt;&#xd;
+				&lt;core:Ext /&gt;&#xd;
+			&lt;/core:Content&gt;&#xd;
+			&lt;PlacementConstraints&gt;&#xd;
+				&lt;core:Ext&gt;&#xd;
+					&lt;cmcst:PlacementConstraintsExt&gt;&#xd;
+						&lt;cmcst:TrickModeRestriction trickMode=&quot;fastForward&quot;&#xd;
+							scale=&quot;2&quot;&gt;Always&lt;/cmcst:TrickModeRestriction&gt;&#xd;
+						&lt;cmcst:TrickModeRestriction trickMode=&quot;fastForward&quot;&#xd;
+							scale=&quot;3&quot;&gt;4&lt;/cmcst:TrickModeRestriction&gt;&#xd;
+						&lt;cmcst:TrickModeRestriction trickMode=&quot;pause&quot;&gt;Always&lt;/cmcst:TrickModeRestriction&gt;&#xd;
+					&lt;/cmcst:PlacementConstraintsExt&gt;&#xd;
+				&lt;/core:Ext&gt;&#xd;
+			&lt;/PlacementConstraints&gt;&#xd;
+		&lt;/adm:Placement&gt;&#xd;
+	&lt;/adm:PlacementDecision&gt;&#xd;
+	&#xd;
+		&lt;adm:PlacementDecision id=&quot;V3dVdTh2SmlFZU9vL0JEZHNkdmYzUT09&quot;&gt;&#xd;
+		&lt;adm:Entertainment&gt;&#xd;
+			&lt;core:Content&gt;&#xd;
+				&lt;core:AssetRef providerID=&quot;xidio&quot;&#xd;
+					assetID=&quot;04a436853d442f7edb27c9382146f9ec&quot; /&gt;&#xd;
+			&lt;/core:Content&gt;&#xd;
+			&lt;adm:EntertainmentNPT scale=&quot;1.0&quot;&gt;${NPT_5_Start}-${NPT_5_End}&#xd;
+			&lt;/adm:EntertainmentNPT&gt;&#xd;
+		&lt;/adm:Entertainment&gt;&#xd;
+		&lt;core:Ext&gt;&#xd;
+			&lt;cmcp1:PlayPositions&gt;&#xd;
+				&lt;cmcp1:PlayPositionStart&gt;&#xd;
+					&lt;cmcp1:NPTOffset&gt;60.000&lt;/cmcp1:NPTOffset&gt;&#xd;
+				&lt;/cmcp1:PlayPositionStart&gt;&#xd;
+			&lt;/cmcp1:PlayPositions&gt;&#xd;
+		&lt;/core:Ext&gt;&#xd;
+	&lt;/adm:PlacementDecision&gt;&#xd;
+&#xd;
+		&#xd;
+	&lt;adm:PlacementDecision id=&quot;VzJBZ01mSmlFZU9vL0JEZHNkdmYzUT09&quot;&#xd;
+		placementOpportunityRef=&quot;request-poid&quot;&gt;&#xd;
+		&lt;adm:OpportunityBinding opportunityType=&quot;postRoll&quot;&#xd;
+			opportunityNumber=&quot;7&quot; /&gt;&#xd;
+		&lt;adm:Placement id=&quot;VzJBZ00vSmlFZU9vL0JEZHNkdmYzUT09&quot;&#xd;
+			action=&quot;fill&quot; position=&quot;1&quot; type=&quot;private:vastLinearExt&quot;&gt;&#xd;
+			&lt;core:Content&gt;&#xd;
+				&lt;core:AssetRef providerID=&quot;ad.com&quot; assetID=&quot;${ad_id}&quot;/&gt;&#xd;
+				&lt;core:ContentLocation contentType=&quot;application/x-mpegURL&quot;&gt;http://${ad_host}/${ad_resource_url}/index.cy&#xd;
+				&lt;/core:ContentLocation&gt;&#xd;
+				&lt;core:Duration&gt;PT0H0M15S&lt;/core:Duration&gt;&#xd;
+				&lt;core:Tracking&gt;tracking-id&lt;/core:Tracking&gt;&#xd;
+				&lt;core:Ext /&gt;&#xd;
+			&lt;/core:Content&gt;&#xd;
+					&lt;/adm:Placement&gt;&#xd;
+		&lt;adm:Placement id=&quot;VzJBZ05mSmlFZU9vL0JEZHNkdmYzUT09&quot;&#xd;
+			action=&quot;fill&quot; position=&quot;2&quot; type=&quot;private:vastLinearExt&quot;&gt;&#xd;
+			&lt;core:Content&gt;&#xd;
+				&lt;core:AssetRef providerID=&quot;ad.com&quot; assetID=&quot;${ad_2_id}&quot;/&gt;&#xd;
+				&lt;core:ContentLocation contentType=&quot;application/x-mpegURL&quot;&gt;http://${ad_host}/${ad_2_resource_url}/index.cy&#xd;
+				&lt;/core:ContentLocation&gt;&#xd;
+				&lt;core:Duration&gt;PT0H0M31S&lt;/core:Duration&gt;&#xd;
+				&lt;core:Tracking&gt;tracking-id&lt;/core:Tracking&gt;&#xd;
+				&lt;core:Ext /&gt;&#xd;
+			&lt;/core:Content&gt;&#xd;
+			&lt;PlacementConstraints&gt;&#xd;
+				&lt;core:Ext&gt;&#xd;
+					&lt;cmcst:PlacementConstraintsExt&gt;&#xd;
+						&lt;cmcst:TrickModeRestriction trickMode=&quot;fastForward&quot;&#xd;
+							scale=&quot;2&quot;&gt;Always&lt;/cmcst:TrickModeRestriction&gt;&#xd;
+						&lt;cmcst:TrickModeRestriction trickMode=&quot;fastForward&quot;&#xd;
+							scale=&quot;3&quot;&gt;4&lt;/cmcst:TrickModeRestriction&gt;&#xd;
+						&lt;cmcst:TrickModeRestriction trickMode=&quot;pause&quot;&gt;Always&lt;/cmcst:TrickModeRestriction&gt;&#xd;
+					&lt;/cmcst:PlacementConstraintsExt&gt;&#xd;
+				&lt;/core:Ext&gt;&#xd;
+			&lt;/PlacementConstraints&gt;&#xd;
+		&lt;/adm:Placement&gt;&#xd;
+	&lt;/adm:PlacementDecision&gt;&#xd;
+	&#xd;
+&lt;/adm:PlacementResponse&gt;</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${adsServerDNS}</stringProp>
+          <stringProp name="HTTPSampler.port">8088</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">spotlink-router/adsrs/SetResponseTemplate</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="TestPlan.comments">Get playist from origin server to make sure there is ad signal already.</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Check playlist from origin" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+            <stringProp name="TestPlan.comments">Verify there is some ad signal marker in playlist from origin</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Check the entainment&apos;s master playlist on origin" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${defaultOrigin_DNS}</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/origin/playlists/${vodLocation}/index-eac3.m3u8</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="TestPlan.comments">Retrieve the entainment&apos;s master playlist on origin server</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify entertaiment&apos;s master playlist could be retrieved from origin server" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-721763217">#EXT-X-FAXS-CM:URI</stringProp>
+              <stringProp name="-261923098">#EXT-X-STREAM-INF:PROGRAM-ID</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+          <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="Get bitrate url which will be used on next step" enabled="true">
+            <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+            <stringProp name="RegexExtractor.refname">biterateContentOrigin</stringProp>
+            <stringProp name="RegexExtractor.regex">(.*.m3u8)</stringProp>
+            <stringProp name="RegexExtractor.template">$1$</stringProp>
+            <stringProp name="RegexExtractor.default"></stringProp>
+            <stringProp name="RegexExtractor.match_number">-1</stringProp>
+            <stringProp name="TestPlan.comments">Fetch the included url for next request to get  variant manifest</stringProp>
+          </RegexExtractor>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Check the entainment&apos;s media playlist on origin server" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${defaultOrigin_DNS}</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/origin/playlists/${vodLocation}/${biterateContentOrigin_7}</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="TestPlan.comments">Retrieve the entainment&apos;s media playlist on origin server</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify entertaiment&apos;s media playlist could be retrieved  from origin server" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="-1237850159">#EXTM3U</stringProp>
+              <stringProp name="-1035324819">#EXT-X-VERSION:3</stringProp>
+              <stringProp name="1269334050">#EXT-X-TARGETDURATION:3</stringProp>
+              <stringProp name="-1636231491">#EXT-X-KEY:METHOD=</stringProp>
+              <stringProp name="-899823186">#EXT-X-FAXS-CM:URI=</stringProp>
+              <stringProp name="1789299020">#EXT-X-MEDIA-SEQUENCE:</stringProp>
+              <stringProp name="567139721">#EXT-X-PLAYLIST-TYPE:</stringProp>
+              <stringProp name="-1280814528">#EXT-X-ALLOW-CACHE:</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Set redirect rule for ad&apos;s release url redirecting point to ad&apos;s stream url" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;rules&gt;&#xd;
+     &lt;rule&gt;&#xd;
+         &lt;originalAsset&gt;${ad_resource_url}/index.cy&lt;/originalAsset&gt;&#xd;
+         &lt;redirectURL&gt;http://ccr.vodvod.comcast.net/origin/playlists/${ad_resource_url}/index.m3u8&lt;/redirectURL&gt;&#xd;
+     &lt;/rule&gt;&#xd;
+     &#xd;
+          &#xd;
+&lt;/rules&gt;&#xd;
+</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${edge_1_DNS}</stringProp>
+          <stringProp name="HTTPSampler.port">9000</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/setAssetRedirectRules</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Set global asset location redirect rule for one asset on content router simulator" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;rules&gt;&#xd;
+     &lt;rule&gt;&#xd;
+         &lt;originalAsset&gt;${resource_url}/index-eac3.m3u8&lt;/originalAsset&gt;&#xd;
+         &lt;redirectURL&gt;http://${defaultOrigin_IP}:8080/origin/playlists/${vodLocation}/index-eac3.m3u8&lt;/redirectURL&gt;&#xd;
+     &lt;/rule&gt;  &#xd;
+     &lt;rule&gt;&#xd;
+         &lt;originalAsset&gt;${resource_url}/index.m3u8&lt;/originalAsset&gt;&#xd;
+         &lt;redirectURL&gt;http://${defaultOrigin_IP}:8080/origin/playlists/${vodLocation}/index.m3u8&lt;/redirectURL&gt;&#xd;
+     &lt;/rule&gt;  &#xd;
+      &lt;rule&gt;&#xd;
+         &lt;originalAsset&gt;${resource_url}_onesap/index_onesap-eac3.m3u8&lt;/originalAsset&gt;&#xd;
+         &lt;redirectURL&gt;http://${defaultOrigin_IP}:8080/origin/playlists/${vodLocation}/index_onesap-eac3.m3u8&lt;/redirectURL&gt;&#xd;
+     &lt;/rule&gt;  &#xd;
+     &lt;rule&gt;&#xd;
+         &lt;originalAsset&gt;${resource_url}/index_onesap.m3u8&lt;/originalAsset&gt;&#xd;
+         &lt;redirectURL&gt;http://${defaultOrigin_IP}:8080/origin/playlists/${vodLocation}/index_onesap.m3u8&lt;/redirectURL&gt;&#xd;
+     &lt;/rule&gt;  &#xd;
+     &#xd;
+&#xd;
+      &lt;rule&gt;&#xd;
+         &lt;originalAsset&gt;${ad_resource_url}/index-eac3.m3u8&lt;/originalAsset&gt;&#xd;
+         &lt;redirectURL&gt;http://${defaultOrigin_IP}:8080/origin/playlists/${ad1}/index-eac3.m3u8&lt;/redirectURL&gt;&#xd;
+     &lt;/rule&gt;&#xd;
+     &#xd;
+&lt;/rules&gt;&#xd;
+</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${crDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/setDefaultAssetRedirectRules</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify reponse code should be 200" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+            <stringProp name="TestPlan.comments">Verify reponse code should be 200</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Set client edge location redirect rule for Client IP/VID Asset combination  on content router simulator" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&lt;rules&gt;&#xd;
+&#xd;
+  &lt;rule&gt;&#xd;
+         &lt;originalAsset&gt;${resource_url}/index-eac3.m3u8&lt;/originalAsset&gt;&#xd;
+         &lt;redirectURL&gt;http://primary_fake_edge/${edge_resource_url}/index-eac3.m3u8&lt;/redirectURL&gt;&#xd;
+     &lt;/rule&gt;&#xd;
+&#xd;
+     &lt;rule&gt;&#xd;
+         &lt;originalAsset&gt;${resource_url}/index.m3u8&lt;/originalAsset&gt;&#xd;
+         &lt;redirectURL&gt;http://primary_fake_edge/${edge_resource_url}/index.m3u8&lt;/redirectURL&gt;&#xd;
+     &lt;/rule&gt;&#xd;
+     &lt;rule&gt;&#xd;
+         &lt;originalAsset&gt;${resource_url}_onesap/index_onesap-eac3.m3u8&lt;/originalAsset&gt;&#xd;
+         &lt;redirectURL&gt;http://primary_onesap_fake_edge/${edge_resource_url}/index_onesap-eac3.m3u8&lt;/redirectURL&gt;&#xd;
+     &lt;/rule&gt;&#xd;
+&#xd;
+     &lt;rule&gt;&#xd;
+         &lt;originalAsset&gt;${resource_url}/index_onesap.m3u8&lt;/originalAsset&gt;&#xd;
+         &lt;redirectURL&gt;http://primary_onesap_fake_edge/${edge_resource_url}/index_onesap.m3u8&lt;/redirectURL&gt;&#xd;
+     &lt;/rule&gt;&#xd;
+&#xd;
+   &#xd;
+     &lt;rule&gt;&#xd;
+         &lt;originalAsset&gt;${ad_resource_url}/index-eac3.m3u8&lt;/originalAsset&gt;&#xd;
+         &lt;redirectURL&gt;http://ad_fake_edge/${ad_edge_resource_url}/index-eac3.m3u8&lt;/redirectURL&gt;&#xd;
+     &lt;/rule&gt;&#xd;
+      &#xd;
+&#xd;
+&#xd;
+&#xd;
+&#xd;
+&lt;/rules&gt;&#xd;
+</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${crDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/setAssetRedirectRules</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="TestPlan.comments">Set client edge location redirect rule for Client IP/VID Asset combination  on simulator</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify reponse code should be 200" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="49586">200</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+            <stringProp name="TestPlan.comments">Verify reponse code should be 200</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Client send aac request for entertaiment A which has only dd+ variant" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1394881076000</longProp>
+        <longProp name="ThreadGroup.end_time">1394881076000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+          <collectionProp name="HeaderManager.headers">
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">Content-Type</stringProp>
+              <stringProp name="Header.value">application/xml</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">X-Forwarded-For</stringProp>
+              <stringProp name="Header.value">${clientIp}</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">channelType</stringProp>
+              <stringProp name="Header.value">Vod</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">zone</stringProp>
+              <stringProp name="Header.value">${zone}</stringProp>
+            </elementProp>
+            <elementProp name="" elementType="Header">
+              <stringProp name="Header.name">timebase</stringProp>
+              <stringProp name="Header.value">true</stringProp>
+            </elementProp>
+          </collectionProp>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Client send aac index request  " enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="ProviderId" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${ProviderId}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">ProviderId</stringProp>
+                <stringProp name="Argument.desc">false</stringProp>
+              </elementProp>
+              <elementProp name="AssetId" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${AssetId}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">AssetId</stringProp>
+                <stringProp name="Argument.desc">false</stringProp>
+              </elementProp>
+              <elementProp name="StreamType" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${StreamType}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">StreamType</stringProp>
+                <stringProp name="Argument.desc">false</stringProp>
+              </elementProp>
+              <elementProp name="DeviceId" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${DeviceId}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">DeviceId</stringProp>
+              </elementProp>
+              <elementProp name="sid" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">vex_${__UUID}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">sid</stringProp>
+              </elementProp>
+              <elementProp name="PartnerId" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${PartnerId}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">PartnerId</stringProp>
+                <stringProp name="Argument.desc">false</stringProp>
+              </elementProp>
+              <elementProp name="dtz" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">${client_dtz}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+                <boolProp name="HTTPArgument.use_equals">true</boolProp>
+                <stringProp name="Argument.name">dtz</stringProp>
+                <stringProp name="Argument.desc">false</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${frontEnd}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">${resource_url}/index.m3u8</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="TestPlan.comments">Get index manifest After ad decision</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify vex return 404 error code" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="51512">404</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_code</stringProp>
+            <boolProp name="Assertion.assume_success">true</boolProp>
+            <intProp name="Assertion.test_type">8</intProp>
+            <stringProp name="TestPlan.comments">Verify there is variant manifest url is contained in response</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <PostThreadGroup guiclass="PostThreadGroupGui" testclass="PostThreadGroup" testname="Clear up test envionment" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="循环控制器" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1406787781000</longProp>
+        <longProp name="ThreadGroup.end_time">1406787781000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </PostThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Clear placement response template on ads simulator" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${adsServerDNS}</stringProp>
+          <stringProp name="HTTPSampler.port">8088</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">spotlink-router/adsrs/ClearVODResponseTemplate</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify reponse code should be 200" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="2524">OK</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="TestPlan.comments">Verify reponse code should be 200</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Clear placement request data which store in ads simulator" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${adsServerDNS}</stringProp>
+          <stringProp name="HTTPSampler.port">8088</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">spotlink-router/adsrs/clearSID</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify reponse code should be 200" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="2524">OK</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="TestPlan.comments">Verify reponse code should be 200</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Reset origin server" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${defaultOrigin_DNS}</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/origin/api/vodcdvrAds/reset</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify reponse code should be 200" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="2524">OK</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="TestPlan.comments">Verify reponse code should be 200</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Clear up encrypting information on origin server" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${defaultOrigin_DNS}</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">origin/api/extKey/header/clearAll</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify reponse code should be 200" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="2524">OK</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="TestPlan.comments">Verify reponse code should be 200</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Clear up FXCM information on origin server" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${defaultOrigin_DNS}</stringProp>
+          <stringProp name="HTTPSampler.port">8080</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">origin/api/extKey/fxcm/clear?assetName=${vodLocation}</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify reponse code should be 200" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="2524">OK</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="TestPlan.comments">Verify reponse code should be 200</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Clear endAll message which store in ads simulator" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${adsServerDNS}</stringProp>
+          <stringProp name="HTTPSampler.port">8088</stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">spotlink-router/adsrs/clearEndAll</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">false</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="TestPlan.comments">Get playist from origin server to make sure there is ad signal already.</stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify reponse code should be 200" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="2524">OK</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="TestPlan.comments">Verify reponse code should be 200</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Clear asset redirect rule on content router simulator" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value"></stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${crDNS}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/clearAssetRedirectRules</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Verify reponse code should be 200" enabled="true">
+            <collectionProp name="Asserion.test_strings">
+              <stringProp name="2524">OK</stringProp>
+            </collectionProp>
+            <stringProp name="Assertion.test_field">Assertion.response_message</stringProp>
+            <boolProp name="Assertion.assume_success">false</boolProp>
+            <intProp name="Assertion.test_type">2</intProp>
+            <stringProp name="TestPlan.comments">Verify reponse code should be 200</stringProp>
+          </ResponseAssertion>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="results" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>true</responseData>
+            <samplerData>false</samplerData>
+            <xml>true</xml>
+            <fieldNames>false</fieldNames>
+            <responseHeaders>true</responseHeaders>
+            <requestHeaders>true</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <sampleCount>true</sampleCount>
+          </value>
+        </objProp>
+        <stringProp name="filename">/usr/local/automation/logs/${__TestPlanName}_${__time(yyyy-MM-dd-hh-mm,)}.log</stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

@@ -1,0 +1,1530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="157" it="0" lt="157" ts="1480325001180" s="true" lb="Reset asset data on origin server" rc="200" rm="OK" tn="Setup test enviorment 1-1" dt="text" by="152" ng="1" na="1">
+  <assertionResult>
+    <name>Verify reponse code should be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="62" it="0" lt="60" ts="1480325001347" s="true" lb="Clear up encrypting information on origin server" rc="200" rm="OK" tn="Setup test enviorment 1-1" dt="text" by="222" ng="1" na="1">
+  <assertionResult>
+    <name>Verify reponse code should be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="130" it="0" lt="130" ts="1480325001411" s="true" lb="Add encrypting information on the entertaiment " rc="200" rm="OK" tn="Setup test enviorment 1-1" dt="text" by="309" ng="1" na="1">
+  <assertionResult>
+    <name>Verify reponse code should be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="114" it="0" lt="113" ts="1480325001542" s="true" lb="add FXCMKey information on the entertaiment " rc="200" rm="OK" tn="Setup test enviorment 1-1" dt="text" by="9414" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="131" it="0" lt="131" ts="1480325001660" s="true" lb="Set placement resposne template on ads simulator" rc="200" rm="OK" tn="Setup test enviorment 1-1" dt="text" by="198" ng="1" na="1">
+  <assertionResult>
+    <name>Verify reponse code should be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="47" it="0" lt="46" ts="1480325001794" s="true" lb="Check the entainment&apos;s master playlist on origin" rc="200" rm="OK" tn="Setup test enviorment 1-1" dt="" by="2909" ng="1" na="1">
+  <assertionResult>
+    <name>Verify entertaiment&apos;s master playlist could be retrieved from origin server</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="55" it="0" lt="52" ts="1480325001853" s="true" lb="Check the entainment&apos;s media playlist on origin server" rc="200" rm="OK" tn="Setup test enviorment 1-1" dt="" by="11486" ng="1" na="1">
+  <assertionResult>
+    <name>Verify entertaiment&apos;s media playlist could be retrieved  from origin server</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="93" it="0" lt="93" ts="1480325001909" s="true" lb="Set global asset location redirect rule for one asset on content router simulator" rc="200" rm="OK" tn="Setup test enviorment 1-1" dt="text" by="140" ng="1" na="1">
+  <assertionResult>
+    <name>Verify reponse code should be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="51" it="0" lt="51" ts="1480325002005" s="true" lb="Set client edge location redirect rule for Client IP/VID Asset combination  on content router simulator" rc="200" rm="OK" tn="Setup test enviorment 1-1" dt="text" by="140" ng="1" na="1">
+  <assertionResult>
+    <name>Verify reponse code should be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="259" it="0" lt="245" ts="1480325003369" s="true" lb="Client send dd+ index request which is ending with -eac3.m3u8" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="73483" ng="1" na="1">
+  <assertionResult>
+    <name>Verify client get master playlist successfully</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify vex decorate correct variant bitrate url in master playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="3" it="0" lt="0" ts="1480325003625" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="61022" ng="0" na="0"/>
+</httpSample>
+<httpSample t="105" it="0" lt="97" ts="1480325003644" s="true" lb="Client send bitrate request for audio-only 20K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="104942" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <sample t="2" it="0" lt="0" ts="1480325003747" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="93460" ng="0" na="0"/>
+</httpSample>
+<httpSample t="90" it="0" lt="88" ts="1480325003761" s="true" lb="Client send bitrate request for audio-only 40K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="11483" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="74" it="0" lt="73" ts="1480325003861" s="true" lb="Client send bitrate request for iframe 90K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="11509" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="101" it="0" lt="101" ts="1480325003945" s="true" lb="Client send bitrate request for iframe 190K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="11537" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="94" it="0" lt="90" ts="1480325004055" s="true" lb="Client send bitrate request for media 300K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="11455" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="78" it="0" lt="78" ts="1480325004156" s="true" lb="Client send bitrate request for media 500K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="11456" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="82" it="0" lt="81" ts="1480325004240" s="true" lb="Client send bitrate request for media 700K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="11455" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="92" it="0" lt="91" ts="1480325004329" s="true" lb="Client send bitrate request for media 100K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="11456" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="88" it="0" lt="86" ts="1480325004428" s="true" lb="Client send bitrate request for iframe 290K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="11536" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="94" it="0" lt="93" ts="1480325004521" s="true" lb="Client send bitrate request for iframe 390K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="11537" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="97" it="0" lt="94" ts="1480325004621" s="true" lb="Client send bitrate request for English audio track 100K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="11403" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="92" it="0" lt="89" ts="1480325004723" s="true" lb="Client send bitrate request for Spanish audio track 100K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="11404" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="92" it="0" lt="91" ts="1480325004818" s="true" lb="Client send bitrate request for Chinese audio track 100K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="11403" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="91" it="0" lt="90" ts="1480325004916" s="true" lb="Client send bitrate request for English audio track 300K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="11404" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="103" it="0" lt="102" ts="1480325005012" s="true" lb="Client send bitrate request for English audio track 300K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="11403" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="105" it="0" lt="104" ts="1480325005120" s="true" lb="Client send bitrate request for Chinese audio track 100K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="11404" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="89" it="0" lt="88" ts="1480325005230" s="true" lb="Client send bitrate request for Spanish audio track 100K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="11403" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="105" it="0" lt="104" ts="1480325005325" s="true" lb="Client send bitrate request for English audio track 100K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="11404" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="134" it="0" lt="133" ts="1480325005435" s="true" lb="Client send bitrate request for Spanish audio track 300K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="11404" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="84" it="0" lt="83" ts="1480325005575" s="true" lb="Client send bitrate request for Japanese audio track 300K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="11403" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="77" it="0" lt="76" ts="1480325005664" s="true" lb="Client send bitrate request for English audio track 700K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="11404" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="84" it="0" lt="79" ts="1480325005747" s="true" lb="Client send bitrate request for Chinese audio track 700K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="11403" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="3351" it="0" lt="3351" ts="1480325005835" s="true" lb="Client send bitrate request for Spanish audio track 700K bandwidth profile  whose media playlist is invalid on origin server" rc="404" rm="Not Found" tn="Client send dd+ request for entertaiment A which has both dd+ and aac variant 2-1" dt="text" by="828" ng="1" na="1">
+  <assertionResult>
+    <name>Response Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="246" it="0" lt="243" ts="1480325010333" s="true" lb="Client send dd+ index request which is  ending with -eac3.m3u8" rc="200" rm="OK" tn="Client send dd+ request for entertaiment B which has same PAID with A but different index name 3-1" dt="text" by="39564" ng="1" na="1">
+  <assertionResult>
+    <name>Verify client get master playlist successfully</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify vex decorate correct variant bitrate url in master playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="1" it="0" lt="0" ts="1480325010578" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="Client send dd+ request for entertaiment B which has same PAID with A but different index name 3-1" dt="text" by="32579" ng="0" na="0"/>
+</httpSample>
+<httpSample t="85" it="0" lt="83" ts="1480325010583" s="true" lb="Client send bitrate request for audio-only 20K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment B which has same PAID with A but different index name 3-1" dt="text" by="76751" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <sample t="1" it="0" lt="0" ts="1480325010667" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="Client send dd+ request for entertaiment B which has same PAID with A but different index name 3-1" dt="text" by="65163" ng="0" na="0"/>
+</httpSample>
+<httpSample t="87" it="0" lt="86" ts="1480325010676" s="true" lb="Client send bitrate request for audio-only 40K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment B which has same PAID with A but different index name 3-1" dt="text" by="11587" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="105" it="0" lt="104" ts="1480325010768" s="true" lb="Client send bitrate request for iframe 90K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment B which has same PAID with A but different index name 3-1" dt="text" by="11615" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="84" it="0" lt="82" ts="1480325010879" s="true" lb="Client send bitrate request for iframe 190K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment B which has same PAID with A but different index name 3-1" dt="text" by="11641" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="85" it="0" lt="80" ts="1480325010968" s="true" lb="Client send bitrate request for media 300K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment B which has same PAID with A but different index name 3-1" dt="text" by="11561" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="88" it="0" lt="86" ts="1480325011059" s="true" lb="Client send bitrate request for media 500K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment B which has same PAID with A but different index name 3-1" dt="text" by="11560" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="87" it="0" lt="85" ts="1480325011151" s="true" lb="Client send bitrate request for media 700K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment B which has same PAID with A but different index name 3-1" dt="text" by="11561" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="88" it="0" lt="87" ts="1480325011244" s="true" lb="Client send bitrate request for media 100K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment B which has same PAID with A but different index name 3-1" dt="text" by="11560" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="84" it="0" lt="84" ts="1480325011337" s="true" lb="Client send bitrate request for iframe 290K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment B which has same PAID with A but different index name 3-1" dt="text" by="11642" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="91" it="0" lt="89" ts="1480325011426" s="true" lb="Client send bitrate request for iframe 390K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment B which has same PAID with A but different index name 3-1" dt="text" by="11641" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="94" it="0" lt="93" ts="1480325011520" s="true" lb="Client send bitrate request for English audio track 100K bandwidth profile" rc="200" rm="OK" tn="Client send dd+ request for entertaiment B which has same PAID with A but different index name 3-1" dt="text" by="11502" ng="1" na="1">
+  <assertionResult>
+    <name>Verify hls tag in media playlist</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertaiment segment name</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify not insert ad</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-KEY:METHOD=NONE tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify EXT-X-DISCONTINUITY tag number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Verify entertainment  segments number as expect</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="90" it="0" lt="90" ts="1480325011622" s="true" lb="Clear placement response template on ads simulator" rc="200" rm="OK" tn="Clear up test env 4-1" dt="text" by="184" ng="1" na="1">
+  <assertionResult>
+    <name>Verify reponse code should be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="49" it="0" lt="49" ts="1480325011713" s="true" lb="Clear placement request data which store in ads simulator" rc="200" rm="OK" tn="Clear up test env 4-1" dt="text" by="141" ng="1" na="1">
+  <assertionResult>
+    <name>Verify reponse code should be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="106" it="0" lt="106" ts="1480325011763" s="true" lb="Reset origin server" rc="200" rm="OK" tn="Clear up test env 4-1" dt="text" by="152" ng="1" na="1">
+  <assertionResult>
+    <name>Verify reponse code should be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="64" it="0" lt="64" ts="1480325011870" s="true" lb="Clear up encrypting information on origin server" rc="200" rm="OK" tn="Clear up test env 4-1" dt="text" by="222" ng="1" na="1">
+  <assertionResult>
+    <name>Verify reponse code should be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="47" it="0" lt="47" ts="1480325011935" s="true" lb="Clear endAll message which store in ads simulator" rc="200" rm="OK" tn="Clear up test env 4-1" dt="text" by="147" ng="1" na="1">
+  <assertionResult>
+    <name>Verify reponse code should be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+<httpSample t="90" it="0" lt="90" ts="1480325011983" s="true" lb="Clear asset redirect rule on content router simulator" rc="200" rm="OK" tn="Clear up test env 4-1" dt="text" by="116" ng="1" na="1">
+  <assertionResult>
+    <name>Verify reponse code should be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+</httpSample>
+
+</testResults>
